@@ -1,0 +1,18 @@
+2015/09/06-18:05:13.027 1483 Reusing MANIFEST /home/twily/.config/chromium/Default/IndexedDB/http_mylabs.px.pearsoned.com_0.indexeddb.leveldb/MANIFEST-000001
+2015/09/06-18:05:13.027 1483 Recovering log #63
+2015/09/06-18:05:13.027 1483 Reusing old log /home/twily/.config/chromium/Default/IndexedDB/http_mylabs.px.pearsoned.com_0.indexeddb.leveldb/000063.log 
+2015/09/06-18:05:13.028 1483 Delete type=2 #60
+2015/09/06-18:05:18.270 1483 Current memtable full; waiting...
+2015/09/06-18:05:18.271 1688 Level-0 table #68: started
+2015/09/06-18:05:18.311 1688 Level-0 table #68: 392 bytes OK
+2015/09/06-18:05:18.336 1688 Delete type=0 #63
+2015/09/06-18:05:18.336 1688 Level-0 table #70: started
+2015/09/06-18:05:18.336 1688 Level-0 table #70: 0 bytes OK
+2015/09/06-18:05:18.361 1688 Delete type=0 #67
+2015/09/06-18:05:18.362 1688 Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0c\x00\x00\x05' @ 139 : 1
+2015/09/06-18:05:18.362 1688 Compacting 1@0 + 1@1 files
+2015/09/06-18:05:18.412 1688 Generated table #71: 3 keys, 406 bytes
+2015/09/06-18:05:18.412 1688 Compacted 1@0 + 1@1 files => 406 bytes
+2015/09/06-18:05:18.437 1688 compacted to: files[ 0 1 1 0 0 0 0 ]
+2015/09/06-18:05:18.437 1688 Delete type=2 #68
+2015/09/06-18:05:18.437 1688 Manual compaction at level-0 from '\x00\x0c\x00\x00\x05' @ 139 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)

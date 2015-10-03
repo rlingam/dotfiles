@@ -1,0 +1,596 @@
+{
+   "checksum": "c033b7f05898114772b557e69cda8460",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13085549614113007",
+               "id": "7",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_vivaldi.jpeg"
+               },
+               "name": "Vivaldi",
+               "type": "url",
+               "url": "https://www.vivaldi.com/"
+            }, {
+               "date_added": "13085549614219970",
+               "id": "8",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_vivaldi_community.png"
+               },
+               "name": "Vivaldi Community",
+               "type": "url",
+               "url": "https://vivaldi.net/en-US/"
+            }, {
+               "date_added": "13085549614290839",
+               "id": "9",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_facebook.png"
+               },
+               "name": "Facebook",
+               "type": "url",
+               "url": "https://www.facebook.com/"
+            }, {
+               "date_added": "13085549614338950",
+               "id": "10",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_booking.com.jpg"
+               },
+               "name": "Booking.com",
+               "type": "url",
+               "url": "http://www.booking.com/index.html?aid=807124"
+            }, {
+               "date_added": "13085549614347254",
+               "id": "11",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_dohop.png"
+               },
+               "name": "Dohop",
+               "type": "url",
+               "url": "http://www.dohop.com/?aff_wlname=Vivaldi"
+            }, {
+               "date_added": "13085549614355315",
+               "id": "12",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_ted.png"
+               },
+               "name": "TED",
+               "type": "url",
+               "url": "http://www.ted.com/"
+            }, {
+               "date_added": "13085549614358487",
+               "id": "13",
+               "meta_info": {
+                  "Thumbnail": "/resources/sd_twitter.png"
+               },
+               "name": "Twitter",
+               "type": "url",
+               "url": "https://twitter.com/"
+            }, {
+               "children": [ {
+                  "date_added": "13085549614364493",
+                  "id": "15",
+                  "meta_info": {
+                     "Thumbnail": "/resources/sd_techcrunch.png"
+                  },
+                  "name": "TechCrunch",
+                  "type": "url",
+                  "url": "http://techcrunch.com/"
+               }, {
+                  "date_added": "13085549614371947",
+                  "id": "16",
+                  "meta_info": {
+                     "Thumbnail": "/resources/sd_arstechnica.png"
+                  },
+                  "name": "Ars Technica",
+                  "type": "url",
+                  "url": "http://arstechnica.com/"
+               }, {
+                  "date_added": "13085549614375066",
+                  "id": "17",
+                  "meta_info": {
+                     "Thumbnail": "/resources/sd_newyorktimes.png"
+                  },
+                  "name": "The New York Times",
+                  "type": "url",
+                  "url": "http://www.nytimes.com/"
+               } ],
+               "date_added": "13085549614361461",
+               "date_modified": "13085549614375066",
+               "id": "14",
+               "name": "News",
+               "type": "folder"
+            } ],
+            "date_added": "13085549613939525",
+            "date_modified": "13085549614361503",
+            "id": "6",
+            "meta_info": {
+               "Speeddial": "true"
+            },
+            "name": "Speed Dial",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614385469",
+               "id": "19",
+               "name": "CyberLink",
+               "type": "url",
+               "url": "http://www.anrdoezrs.net/click-7635766-10513970"
+            }, {
+               "date_added": "13085549614394251",
+               "id": "20",
+               "name": "GitHub · Build software better, together.",
+               "type": "url",
+               "url": "https://github.com/"
+            }, {
+               "date_added": "13085549614397564",
+               "id": "21",
+               "name": "Gizmodo - Tech By Design",
+               "type": "url",
+               "url": "http://gizmodo.com/"
+            }, {
+               "date_added": "13085549614408140",
+               "id": "22",
+               "name": "The Verge",
+               "type": "url",
+               "url": "http://www.theverge.com/"
+            }, {
+               "date_added": "13085549614411877",
+               "id": "23",
+               "name": "Engadget | Technology News, Advice and Features",
+               "type": "url",
+               "url": "http://www.engadget.com/"
+            }, {
+               "date_added": "13085549614415905",
+               "id": "24",
+               "name": "WIRED",
+               "type": "url",
+               "url": "http://www.wired.com/"
+            }, {
+               "date_added": "13085549614424266",
+               "id": "25",
+               "name": "Slashdot",
+               "type": "url",
+               "url": "http://slashdot.org/"
+            }, {
+               "date_added": "13085549614428871",
+               "id": "26",
+               "name": "reddit: the front page of the internet",
+               "type": "url",
+               "url": "http://www.reddit.com/"
+            } ],
+            "date_added": "13085549614378313",
+            "date_modified": "13085549614428871",
+            "id": "18",
+            "name": "Technology",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614442573",
+               "id": "28",
+               "name": "Kabam | Play free online strategy games",
+               "type": "url",
+               "url": "https://www.kabam.com/"
+            }, {
+               "date_added": "13085549614448108",
+               "id": "29",
+               "name": "GameSpot - Video Games Reviews & News",
+               "type": "url",
+               "url": "http://www.gamespot.com/"
+            }, {
+               "date_added": "13085549614459240",
+               "id": "30",
+               "name": "IGN",
+               "type": "url",
+               "url": "http://www.ign.com/"
+            }, {
+               "date_added": "13085549614463240",
+               "id": "31",
+               "name": "Twitch",
+               "type": "url",
+               "url": "http://www.twitch.tv/"
+            }, {
+               "date_added": "13085549614467663",
+               "id": "32",
+               "name": "Minecraft Forum",
+               "type": "url",
+               "url": "http://www.minecraftforum.net/"
+            }, {
+               "date_added": "13085549614472697",
+               "id": "33",
+               "name": "Battle.net",
+               "type": "url",
+               "url": "http://www.battle.net/"
+            }, {
+               "date_added": "13085549614479432",
+               "id": "34",
+               "name": "GameFAQs - Video Game Cheats, Reviews, FAQs, Message Boards, and More",
+               "type": "url",
+               "url": "http://www.gamefaqs.com/"
+            }, {
+               "date_added": "13085549614483280",
+               "id": "35",
+               "name": "Kongregate: Play free games online",
+               "type": "url",
+               "url": "http://www.kongregate.com/"
+            } ],
+            "date_added": "13085549614433261",
+            "date_modified": "13085549614483280",
+            "id": "27",
+            "name": "Games",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614494659",
+               "id": "37",
+               "name": "Brookstone | Gift Ideas, Smart Solutions, Unique Gifts for Him & Her",
+               "type": "url",
+               "url": "http://www.anrdoezrs.net/click-7635766-11967957"
+            }, {
+               "date_added": "13085549614499356",
+               "id": "38",
+               "name": "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
+               "type": "url",
+               "url": "http://www.amazon.com/"
+            }, {
+               "date_added": "13085549614504299",
+               "id": "39",
+               "name": "Newegg.com - Computer Parts, Laptops, Electronics, and More",
+               "type": "url",
+               "url": "http://www.newegg.com/"
+            }, {
+               "date_added": "13085549614518463",
+               "id": "40",
+               "name": "eBay",
+               "type": "url",
+               "url": "http://www.ebay.com/"
+            }, {
+               "date_added": "13085549614523295",
+               "id": "41",
+               "name": "Best Buy",
+               "type": "url",
+               "url": "http://www.bestbuy.com/"
+            }, {
+               "date_added": "13085549614530105",
+               "id": "42",
+               "name": "Overstock.com: Online Shopping - Bedding, Furniture, Electronics, Jewelry, Watches, Clothing & more",
+               "type": "url",
+               "url": "http://www.overstock.com/"
+            }, {
+               "date_added": "13085549614534370",
+               "id": "43",
+               "name": "Zappos.com | Online Shoes, Clothing, Free Shipping and Returns",
+               "type": "url",
+               "url": "http://www.zappos.com/"
+            }, {
+               "date_added": "13085549614540286",
+               "id": "44",
+               "name": "Shopping.com - Find, Compare, and Buy Anything in Seconds",
+               "type": "url",
+               "url": "http://www.shopping.com/"
+            }, {
+               "date_added": "13085549614547070",
+               "id": "45",
+               "name": "TigerDirect.com - Electronics, Tablets, Phones, Office Supplies & Video Games",
+               "type": "url",
+               "url": "http://www.tigerdirect.com/"
+            } ],
+            "date_added": "13085549614488298",
+            "date_modified": "13085549614547070",
+            "id": "36",
+            "name": "Shopping",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614556917",
+               "id": "47",
+               "name": "ESPN: The Worldwide Leader In Sports",
+               "type": "url",
+               "url": "http://www.go.com/"
+            }, {
+               "date_added": "13085549614561112",
+               "id": "48",
+               "name": "Yahoo Sports – Sports News, Scores, Rumors, Fantasy Games, and more",
+               "type": "url",
+               "url": "http://sports.yahoo.com/"
+            }, {
+               "date_added": "13085549614569567",
+               "id": "49",
+               "name": "Goal.com | Latest Football News, Transfer Rumours & More",
+               "type": "url",
+               "url": "http://www.goal.com/"
+            }, {
+               "date_added": "13085549614575572",
+               "id": "50",
+               "name": "NFL.com - Official Site of the National Football League",
+               "type": "url",
+               "url": "http://www.nfl.com/"
+            }, {
+               "date_added": "13085549614583710",
+               "id": "51",
+               "name": "MLB.com: The Official Site of Major League Baseball",
+               "type": "url",
+               "url": "http://www.mlb.com/"
+            }, {
+               "date_added": "13085549614591769",
+               "id": "52",
+               "name": "CBSSports.com Sports News, Fantasy Scores, Sports Video",
+               "type": "url",
+               "url": "http://www.cbssports.com/"
+            }, {
+               "date_added": "13085549614599558",
+               "id": "53",
+               "name": "NBA.com",
+               "type": "url",
+               "url": "http://www.nba.com/"
+            }, {
+               "date_added": "13085549614606437",
+               "id": "54",
+               "name": "Bleacher Report | Sports. Highlights. News. Now.",
+               "type": "url",
+               "url": "http://www.bleacherreport.com/"
+            } ],
+            "date_added": "13085549614551876",
+            "date_modified": "13085549614606437",
+            "id": "46",
+            "name": "Sports",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614617671",
+               "id": "56",
+               "name": "CNN.com - Breaking News, U.S., World, Weather, Entertainment & Video News",
+               "type": "url",
+               "url": "http://www.cnn.com/"
+            }, {
+               "date_added": "13085549614623298",
+               "id": "57",
+               "name": "Huffington Post - Breaking News and Opinion",
+               "type": "url",
+               "url": "http://www.huffingtonpost.com/"
+            }, {
+               "date_added": "13085549614627681",
+               "id": "58",
+               "name": "The Guardian | Latest news, sport and comment",
+               "type": "url",
+               "url": "http://www.theguardian.com/"
+            }, {
+               "date_added": "13085549614635069",
+               "id": "59",
+               "name": "Reuters.com | Business & Financial News, Breaking US & International News",
+               "type": "url",
+               "url": "http://www.reuters.com/"
+            }, {
+               "date_added": "13085549614641619",
+               "id": "60",
+               "name": "Washington Post: Breaking News, World, US, DC News & Analysis",
+               "type": "url",
+               "url": "http://www.washingtonpost.com/"
+            }, {
+               "date_added": "13085549614646068",
+               "id": "61",
+               "name": "Examiner.com",
+               "type": "url",
+               "url": "http://www.examiner.com/"
+            }, {
+               "date_added": "13085549614653942",
+               "id": "62",
+               "name": "TIME - Breaking News, Analysis, Politics, Blogs, News Photos, Video, Tech Reviews",
+               "type": "url",
+               "url": "http://time.com/"
+            } ],
+            "date_added": "13085549614610880",
+            "date_modified": "13085549614653942",
+            "id": "55",
+            "name": "News",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614669663",
+               "id": "64",
+               "name": "San Francisco Restaurants, Dentists, Bars, Beauty Salons, Doctors",
+               "type": "url",
+               "url": "http://www.yelp.com/"
+            }, {
+               "date_added": "13085549614675664",
+               "id": "65",
+               "name": "Craigslist",
+               "type": "url",
+               "url": "http://www.craigslist.org/"
+            }, {
+               "date_added": "13085549614680523",
+               "id": "66",
+               "name": "LivingSocial | Discover fun things to do",
+               "type": "url",
+               "url": "https://www.livingsocial.com/"
+            }, {
+               "date_added": "13085549614691382",
+               "id": "67",
+               "name": "OpenTable | Restaurants and Restaurant Reservations",
+               "type": "url",
+               "url": "http://www.opentable.com/"
+            } ],
+            "date_added": "13085549614661166",
+            "date_modified": "13085549614691382",
+            "id": "63",
+            "name": "Local",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614700932",
+               "id": "69",
+               "name": "Expedia Travel: Vacations, Cheap Flights, Airline Tickets & Airfares",
+               "type": "url",
+               "url": "http://www.expedia.com/"
+            }, {
+               "date_added": "13085549614709993",
+               "id": "70",
+               "name": "TripAdvisor",
+               "type": "url",
+               "url": "http://www.tripadvisor.com/"
+            }, {
+               "date_added": "13085549614714650",
+               "id": "71",
+               "name": "Hotels.com",
+               "type": "url",
+               "url": "http://www.hotels.com/"
+            }, {
+               "date_added": "13085549614725943",
+               "id": "72",
+               "name": "Booking.com",
+               "type": "url",
+               "url": "http://www.booking.com/index.html?aid=807124"
+            }, {
+               "date_added": "13085549614732301",
+               "id": "73",
+               "name": "KAYAK",
+               "type": "url",
+               "url": "http://www.kayak.com/"
+            }, {
+               "date_added": "13085549614743090",
+               "id": "74",
+               "name": "Airbnb",
+               "type": "url",
+               "url": "https://www.airbnb.com/"
+            } ],
+            "date_added": "13085549614696338",
+            "date_modified": "13085549614743090",
+            "id": "68",
+            "name": "Travel",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614760220",
+               "id": "76",
+               "name": "WSJ",
+               "type": "url",
+               "url": "http://www.wsj.com/"
+            }, {
+               "date_added": "13085549614766275",
+               "id": "77",
+               "name": "Bloomberg - Business, Financial & Economic News, Stock Quotes",
+               "type": "url",
+               "url": "http://www.bloomberg.com/"
+            }, {
+               "date_added": "13085549614776873",
+               "id": "78",
+               "name": "The Economist - World News, Politics, Economics, Business & Finance",
+               "type": "url",
+               "url": "http://www.economist.com/"
+            }, {
+               "date_added": "13085549614783403",
+               "id": "79",
+               "name": "FT.com - World business, finance and political news from the Financial Times",
+               "type": "url",
+               "url": "http://www.ft.com/"
+            }, {
+               "date_added": "13085549614794072",
+               "id": "80",
+               "name": "CNBC – World Business News Leader",
+               "type": "url",
+               "url": "http://www.cnbc.com/"
+            }, {
+               "date_added": "13085549614801413",
+               "id": "81",
+               "name": "Forbes",
+               "type": "url",
+               "url": "http://www.forbes.com/"
+            }, {
+               "date_added": "13085549614811693",
+               "id": "82",
+               "name": "Seth Godin",
+               "type": "url",
+               "url": "http://www.sethgodin.com/"
+            } ],
+            "date_added": "13085549614750672",
+            "date_modified": "13085549614811693",
+            "id": "75",
+            "name": "Business",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13085549614832389",
+               "id": "84",
+               "name": "YouTube",
+               "type": "url",
+               "url": "http://www.youtube.com/"
+            }, {
+               "date_added": "13085549614845746",
+               "id": "85",
+               "name": "Netflix - Watch TV Shows Online, Watch Movies Online",
+               "type": "url",
+               "url": "https://www.netflix.com/"
+            }, {
+               "date_added": "13085549614852919",
+               "id": "86",
+               "name": "BBC Shop | DVD & Blu-ray Best Sellers",
+               "type": "url",
+               "url": "http://www.awin1.com/awclick.php?mid=3712&id=214175"
+            }, {
+               "date_added": "13085549614863725",
+               "id": "87",
+               "name": "Spotify Web Player",
+               "type": "url",
+               "url": "https://play.spotify.com/"
+            }, {
+               "date_added": "13085549614872922",
+               "id": "88",
+               "name": "Dailymotion",
+               "type": "url",
+               "url": "http://www.dailymotion.com/"
+            }, {
+               "date_added": "13085549614882970",
+               "id": "89",
+               "name": "IMDb - Movies, TV and Celebrities",
+               "type": "url",
+               "url": "http://www.imdb.com/"
+            }, {
+               "date_added": "13085549614903956",
+               "id": "90",
+               "name": "Rotten Tomatoes: Movies | TV Shows | Movie Trailers | Reviews",
+               "type": "url",
+               "url": "http://www.rottentomatoes.com/"
+            }, {
+               "date_added": "13085549614910928",
+               "id": "91",
+               "name": "Hulu | Free TV Shows and Movies - Watch Your Favorite TV Episodes and Movies Online",
+               "type": "url",
+               "url": "http://www.hulu.com/"
+            }, {
+               "date_added": "13085549614921600",
+               "id": "92",
+               "name": "Vimeo, Your Videos Belong Here",
+               "type": "url",
+               "url": "https://vimeo.com/"
+            } ],
+            "date_added": "13085549614820683",
+            "date_modified": "13085549614921600",
+            "id": "83",
+            "name": "Entertainment",
+            "type": "folder"
+         } ],
+         "date_added": "13085549612717049",
+         "date_modified": "13085549614820763",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13085549612717059",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13085549612717060",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

@@ -1,0 +1,33 @@
+2015/09/06-17:59:14.510 1483 Reusing MANIFEST /home/twily/.config/chromium/Default/IndexedDB/http_mylabs.px.pearsoned.com_0.indexeddb.leveldb/MANIFEST-000001
+2015/09/06-17:59:14.510 1483 Recovering log #52
+2015/09/06-17:59:14.510 1483 Reusing old log /home/twily/.config/chromium/Default/IndexedDB/http_mylabs.px.pearsoned.com_0.indexeddb.leveldb/000052.log 
+2015/09/06-17:59:14.510 1483 Delete type=2 #48
+2015/09/06-17:59:19.929 1483 Current memtable full; waiting...
+2015/09/06-17:59:19.929 1688 Level-0 table #57: started
+2015/09/06-17:59:19.954 1688 Level-0 table #57: 392 bytes OK
+2015/09/06-17:59:20.004 1688 Delete type=0 #52
+2015/09/06-17:59:20.005 1688 Level-0 table #59: started
+2015/09/06-17:59:20.005 1688 Level-0 table #59: 0 bytes OK
+2015/09/06-17:59:20.139 1688 Delete type=0 #56
+2015/09/06-17:59:20.140 1688 Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\x05' @ 115 : 1
+2015/09/06-17:59:20.140 1688 Compacting 1@0 + 1@1 files
+2015/09/06-17:59:20.208 1688 Generated table #60: 3 keys, 406 bytes
+2015/09/06-17:59:20.208 1688 Compacted 1@0 + 1@1 files => 406 bytes
+2015/09/06-17:59:20.232 1688 compacted to: files[ 0 1 1 0 0 0 0 ]
+2015/09/06-17:59:20.232 1688 Delete type=2 #57
+2015/09/06-17:59:20.232 1688 Manual compaction at level-0 from '\x00\x0a\x00\x00\x05' @ 115 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2015/09/06-17:59:21.325 1483 Current memtable full; waiting...
+2015/09/06-17:59:21.325 1688 Level-0 table #62: started
+2015/09/06-17:59:21.350 1688 Level-0 table #62: 392 bytes OK
+2015/09/06-17:59:21.375 1688 Delete type=0 #58
+2015/09/06-17:59:21.375 1688 Delete type=2 #54
+2015/09/06-17:59:21.376 1688 Level-0 table #64: started
+2015/09/06-17:59:21.376 1688 Level-0 table #64: 0 bytes OK
+2015/09/06-17:59:21.402 1688 Delete type=0 #61
+2015/09/06-17:59:21.402 1688 Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0b\x00\x00\x05' @ 127 : 1
+2015/09/06-17:59:21.402 1688 Compacting 1@0 + 1@1 files
+2015/09/06-17:59:21.443 1688 Generated table #65: 3 keys, 406 bytes
+2015/09/06-17:59:21.443 1688 Compacted 1@0 + 1@1 files => 406 bytes
+2015/09/06-17:59:21.468 1688 compacted to: files[ 0 1 1 0 0 0 0 ]
+2015/09/06-17:59:21.468 1688 Delete type=2 #62
+2015/09/06-17:59:21.468 1688 Manual compaction at level-0 from '\x00\x0b\x00\x00\x05' @ 127 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)

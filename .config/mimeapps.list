@@ -1,0 +1,37 @@
+[Added Associations]
+application/zip=xarchiver.desktop;
+application/x-shellscript=leafpad.desktop;
+image/png=ristretto.desktop;
+x-scheme-handler/http=userapp-Nightly-T2VG4X.desktop;
+x-scheme-handler/https=userapp-Nightly-T2VG4X.desktop;
+x-scheme-handler/ftp=userapp-Nightly-T2VG4X.desktop;
+x-scheme-handler/chrome=userapp-Nightly-T2VG4X.desktop;
+text/html=firefox.desktop;elinks.desktop;userapp-Nightly-T2VG4X.desktop;
+application/x-extension-htm=userapp-Nightly-T2VG4X.desktop;
+application/x-extension-html=userapp-Nightly-T2VG4X.desktop;
+application/x-extension-shtml=userapp-Nightly-T2VG4X.desktop;
+application/xhtml+xml=userapp-Nightly-T2VG4X.desktop;
+application/x-extension-xhtml=userapp-Nightly-T2VG4X.desktop;
+application/x-extension-xht=userapp-Nightly-T2VG4X.desktop;
+text/plain=leafpad.desktop;
+application/x-rar=xarchiver.desktop;
+image/jpeg=feh.desktop;
+video/mp4=mpv.desktop;
+application/x-bzip-compressed-tar=org.gnome.FileRoller.desktop;
+video/x-matroska=mpv.desktop;
+application/x-mswinurl=org.gnome.gedit.desktop;
+application/pdf=evince-previewer.desktop;
+application/x-bittorrent=transmission-gtk.desktop;
+
+[Default Applications]
+x-scheme-handler/http=userapp-Nightly-T2VG4X.desktop
+x-scheme-handler/https=userapp-Nightly-T2VG4X.desktop
+x-scheme-handler/ftp=userapp-Nightly-T2VG4X.desktop
+x-scheme-handler/chrome=userapp-Nightly-T2VG4X.desktop
+text/html=userapp-Nightly-T2VG4X.desktop
+application/x-extension-htm=userapp-Nightly-T2VG4X.desktop
+application/x-extension-html=userapp-Nightly-T2VG4X.desktop
+application/x-extension-shtml=userapp-Nightly-T2VG4X.desktop
+application/xhtml+xml=userapp-Nightly-T2VG4X.desktop
+application/x-extension-xhtml=userapp-Nightly-T2VG4X.desktop
+application/x-extension-xht=userapp-Nightly-T2VG4X.desktop
