@@ -9,7 +9,7 @@ need to.
 You can clone the repository wherever you want, but to install, add 
 the files to your ~/ (/home/$USER/). 
 
-'''bash
+```bash
 git clone https://github.com/rlingam/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && cp ~/.dotfiles/* ~/
-'''
+```
 
