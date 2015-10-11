@@ -1,5 +1,5 @@
 ### dotfiles
-![Screenshot of my desktop] (http://i.imgur.com/uyyIxmd.png?1)
+![Screenshot of my desktop] (http://i.imgur.com/8wZ8IDL.png?1)
 ![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
 
 dotfiles are how you personalize your system. These are mine
