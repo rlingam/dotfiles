@@ -5,7 +5,7 @@
 #
 # Usage:    sh colors-hex -c|--case tolower|toupper -a|--align left|center|right -l|--line true|false -j|--jump <lines>
 
-XPATH="/home/guest/.Xresources"
+XPATH="/home/twily/.Xresources"
 CCASE="tolower"     # tolower|toupper
 ULINE=false         # true|false
 ALIGN="center"      # left|center|right
