@@ -95,8 +95,8 @@ chatnets = {
   };
   Rizon = {
     type = "IRC";
-    nick = "twily";
-    autosendcmd = "/^msg NickServ IDENTIFY *******;wait 2000";
+    nick = "gg";
+    autosendcmd = "/^msg NickServ IDENTIFY ;wait 2000";
     max_kicks = "1";
     max_msgs = "3";
     max_whois = "30";
@@ -281,8 +281,8 @@ statusbar = {
 
 settings = {
   core = {
-    user_name = "twily";
-    nick = "twily";
+    user_name = "gg";
+    nick = "gg";
     # (old nick Twily91)
     #timestamp_format = "%H%M";
     timestamp_format = "";
