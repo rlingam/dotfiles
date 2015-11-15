@@ -306,9 +306,9 @@ settings = {
 };
 
 hilights = (
-  { text = "twily"; nick = "yes"; word = "yes"; color = "%R"; },
-  { text = "twili"; nick = "yes"; word = "yes"; color = "%R"; },
-  { text = "twilly"; nick = "yes"; word = "yes"; color = "%R"; },
-  { text = "pony"; nick = "yes"; word = "yes"; color = "%R"; }
+  { text = "gg"; nick = "yes"; word = "yes"; color = "%R"; },
+  { text = "gg_"; nick = "yes"; word = "yes"; color = "%R"; },
+  { text = "_gg"; nick = "yes"; word = "yes"; color = "%R"; },
+  { text = "GG"; nick = "yes"; word = "yes"; color = "%R"; }
 );
 logs = { };
