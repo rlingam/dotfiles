@@ -90,6 +90,8 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cacamoir="CACA_DRIVER=ncurses cacamoir"
     alias pac="sudo pacman -S"
     alias eZ="vim ~/.zshrc"
+    alias eS='vim ~/.config/sxhkd/sxhkdrc'
+    alias eB='vim ~/.config/bspwm/bspwmrc'
     alias Y="yaourt"
     alias MP="ncmpcpp"
     alias eO="vim ~/.config/openbox/rc.xml"
