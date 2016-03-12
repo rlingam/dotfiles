@@ -271,7 +271,7 @@
     <keybind key="W-p">
       <action name="Execute">
           <!--command>bashrun</command-->
-          <command>sh ~/scripts/dmenu</command>
+      <command>sh ~/scripts/dmenu</command>
       </action>
     </keybind>
     <keybind key="Print">
