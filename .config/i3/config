@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
-# Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft
+# Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft, compton(for rofi transparency)
 
 set $mod Mod4
 
