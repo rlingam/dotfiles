@@ -97,6 +97,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias eO="vim ~/.config/openbox/rc.xml"
     alias shutdown="sudo shutdown now"
     alias eI="vim ~/.config/i3/config"
+    alias eIB='vim ~/.config/i3blocks/i3blocks.conf'
     alias e="emacs"
 
 # }}}
