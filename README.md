@@ -13,8 +13,28 @@ You can clone the repository wherever you want, but to install, add
 the files to your ~/ (/home/$USER/). 
 
 ```bash
-git clone https://github.com/rlingam/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && cp ~/.dotfiles/* ~/
+git clone https://github.com/rlingam/dotfiles.git && cd ~/.dotfiles && cp ~/.dotfiles/* ~/
 ```
+
+or better yet install stow accordingly on your distro and simply
+navigate to your home directory
+` cd ~/`
+
+make the dotfiles directory:
+
+`mkdir Dotfiles`
+
+change into the Dotfiles directory:
+
+`cd Dotfiles`
+
+clone the repo:
+
+`https://github.com/rlingam/dotfiles.git`
+
+install the dotfiles onto your home directory:
+
+`sudo stow -v -t ~/ dotfiles`
 
 # Whats Included
 A lot of stuff,seriously, alot of stuff. Check out everything with a 
