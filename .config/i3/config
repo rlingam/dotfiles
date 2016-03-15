@@ -201,6 +201,7 @@ bindsym Mod4+F1 exec amixer -q set Master toggle
 #
 # after you've installed i3blocks, move the config from /etc/i3blocks.conf to ~/.config/i3blocks/
 bar {
+#       status_command i3status  
         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
         position bottom 
         font Inconsolata 12
