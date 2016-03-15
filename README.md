@@ -1,8 +1,8 @@
-### dotfiles
+#dotfiles
 ![Screenshot of my desktop] (http://i.imgur.com/8wZ8IDL.png?1)
 ![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
 
-#Table of Contents
+##Table of Contents
  - [introduction] (#dotfiles)
  - [Installation] (#Installation)
  - [Whats Included] (#Whats-Included)
