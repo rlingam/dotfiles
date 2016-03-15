@@ -3,11 +3,11 @@
 ![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
 
 #Table of Contents
- - [introduction](#dotfiles)
- - [Installation](#Installation)
- - [Whats Included](#Whats-Included)
- - [Things you should know](#Things-you-should-know)
- - [Thanks](#Thanks)
+ - [introduction] (#dotfiles)
+ - [Installation] (#Installation)
+ - [Whats Included] (#Whats-Included)
+ - [Things you should know] (#Things-you-should-know)
+ - [Thanks] (#Thanks)
 
 #dotfiles
 dotfiles are how you personalize your system. These are mine
