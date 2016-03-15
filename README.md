@@ -18,6 +18,7 @@ git clone https://github.com/rlingam/dotfiles.git && cd ~/.dotfiles && cp ~/.dot
 
 or better yet install stow accordingly on your distro and simply
 navigate to your home directory
+
 ` cd ~/`
 
 make the dotfiles directory:
