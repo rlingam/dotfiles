@@ -98,7 +98,9 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias shutdown="sudo shutdown now"
     alias eI="vim ~/.config/i3/config"
     alias eIB='vim ~/.config/i3blocks/i3blocks.conf'
-    alias e="emacs"
+    alias e="vim"
+    alias eIR='vim ~/.irssi/config'
+    alias C='clear'
 
 # }}}
 #
