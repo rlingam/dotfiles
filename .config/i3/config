@@ -9,7 +9,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
-# Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft, compton(for rofi transparency), amixer
+# Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft, compton(for rofi transparency),
+#                amixer, scrot, imgur-screenshot-git, 
 
 set $mod Mod4
 
@@ -187,9 +188,9 @@ bindsym $mod+r mode "resize"
 
 #Multimedia 
 #Alsa controls
-bindsym Mod4+F2 exec amixer set Master -q 5%-
-bindsym Mod4+F3 exec amixer set Master -q 5%+
-bindsym Mod4+F1 exec amixer -q set Master toggle
+bindsym $mod+F2 exec amixer set Master -q 5%-
+bindsym $mod+F3 exec amixer set Master -q 5%+
+bindsym $mod+F1 exec amixer -q set Master toggle
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play
 #bindsym XF86AudioPause exec playerctl pause
@@ -198,6 +199,7 @@ bindsym Mod4+F1 exec amixer -q set Master toggle
 
 #Screenshot
 bindsym Print exec scrot '%Y-%m-%d_$wx$h.png' -e -z 'mv $f ~/Pictures/'
+bindsym $mod+Print exec imgur-screenshot 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
