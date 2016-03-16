@@ -1,21 +1,14 @@
 ![Screenshot of my desktop] (http://i.imgur.com/8wZ8IDL.png?1)
 ![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
 
-#Table of Contents
- - [introduction] (##dotfiles)
- - [Installation] (##Installation)
- - [Whats Included] (##Whats-Included)
- - [Things you should know] (##Things-you-should-know)
- - [Thanks] (##Thanks)
-
-##dotfiles
+## dotfiles
 dotfiles are how you personalize your system. These are mine
 
 If you want to give these dotfiles a try make sure you read the code
 over, things will go much smoothly that way, and even modify if you 
 need to.
 
-##Installation
+## Installation
 You can clone the repository wherever you want, but to install, add 
 the files to your ~/ (/home/$USER/). 
 
@@ -44,12 +37,12 @@ install the dotfiles onto your home directory:
 
 `sudo stow -v -t ~/ dotfiles`
 
-##Whats Included
+## Whats Included
 A lot of stuff,seriously, alot of stuff. Check out everything with a 
 file browser and see what kind of stuff is there. Change what you 
 want, remove what you don't need, and build on what you do use.
 
-##Things you should know
+## Things you should know
 The tiling folder has scripts which requires dependencies including 
 slop or xrectsel, urxvt, wmctrl, xdotool, xwininfo. The tiling folder
 is to be used with openbox.
@@ -65,7 +58,7 @@ installed then refresh, if it still doesn't work make sure
 you have the right font configured on the corresponding
 config file.
 
-##Thanks
+## Thanks
 Thanks for taking the time to view and hopefully download
 my dotfiles. Special thanks to a fellow named twily whom
 i originally forked my dotfiles off of.
