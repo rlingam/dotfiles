@@ -190,9 +190,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#Multimedia 
+# Multimedia 
 
-#Alsa controls
+# Alsa controls
 bindsym $mod+F2 exec amixer set Master -q 5%-
 bindsym $mod+F3 exec amixer set Master -q 5%+
 bindsym $mod+F1 exec amixer -q set Master toggle
@@ -202,9 +202,13 @@ bindsym $mod+F1 exec amixer -q set Master toggle
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
 
-#Screenshot
+# Screenshot
 bindsym Print exec scrot '%Y-%m-%d_$wx$h.png' -e -z 'mv $f ~/Pictures/'
 bindsym $mod+Print exec imgur-screenshot 
+
+# Screencast
+#bindsym $mod+F9 exec ~/scripts/screencast
+#bindsym Control+Alt+x exec pkill -f x11grab
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -215,8 +219,6 @@ bar {
         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
         position bottom 
         font Inconsolata 12
-        workspace_buttons yes
-        strip_workspace_numbers no 
 
     colors {
         background $dark-gray 
