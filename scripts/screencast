@@ -70,7 +70,7 @@ if [ "$MODE" = "window" ]; then
     # ffmpeg -f alsa -ac 2 -i hw:1,1 -f x11grab -s "$WINW"x"$WINH" -r $FPS -i $DISPLAY"+$WINX,$WINY" -c:v libx264 -preset $PRESET -crf $CRF -y "$TMP" #|| ERROR=1
 else
     sleep 2 # Wait before recording begin
-    notify-send "Desktop is now being recorded.\nStop by pressing Ctrl+Alt+X."
+    notify-send "Desktop is now being recorded.\nStop by pressing Windows+F10."
 
     # Record Fullscreen
     ffmpeg -f x11grab -s $FULLSCREEN -r $FPS -i $DISPLAY -c:v libx264 -preset $PRESET -crf $CRF -y "$TMP" #|| ERROR=1
