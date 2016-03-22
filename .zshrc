@@ -268,3 +268,4 @@ export INFINALITY_FT_USE_VARIOUS_TWEAKS=true
 
 # Enable Zsh command highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
