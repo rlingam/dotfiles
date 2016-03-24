@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
 # Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft, compton(for rofi transparency),
-#                amixer, scrot, imgur-screenshot-git, redshift 
+#                alsa-utils, scrot, imgur-screenshot-git, redshift, feh 
 
 set $mod Mod4
 
