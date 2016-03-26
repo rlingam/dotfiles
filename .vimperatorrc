@@ -1,5 +1,7 @@
 colorscheme twily
 
+set hintchars=fjdksla;
+
 set maxitems=20
 set titlestring=
 
