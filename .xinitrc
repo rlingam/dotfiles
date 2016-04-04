@@ -2,7 +2,7 @@
 
 xrdb -merge "${HOME}/.Xresources"
 
-setxkbmap -option '' -option kpdl:dot -option caps:swapescape no
+#setxkbmap -option '' -option kpdl:dot -option caps:swapescape no
 
 feh ~/water_fantasy_art_artwork_huts_2560x1440_.jpg --bg-fill
 sh ~/scripts/compton
