@@ -268,10 +268,10 @@
     <keybind key="C-A-KP_1"> <action name="DirectionalCycleWindows"> <direction>left</direction>  </action> </keybind>
 
     <!-- Keybindings for running applications -->
-    <keybind key="W-r">
+    <keybind key="W-p">
       <action name="Execute">
           <!--<command>bashrun</command>-->
-          <command>sh ~/scripts/dmenu</command>
+          <command>sh ~/scripts/rofi</command>
       </action>
     </keybind>
     <keybind key="Print">
