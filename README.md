@@ -9,14 +9,18 @@ over, things will go much smoothly that way, and even modify if you
 need to.
 
 ## Installation
+
+### Method 1 (preferred)
+You can now use the install script(untested but should work) located in ~/scripts/
+you will have gitclone the directory somewewhere other than ~/ and extract the script and run it from there.
+
 You can clone the repository wherever you want, but to install, add 
 the files to your ~/ (/home/$USER/). 
 
-```bash
-git clone https://github.com/rlingam/dotfiles.git && cd ~/dotfiles && cp ~/dotfiles/* ~/
-```
+for a cleaner solution (but more work) see Method 2
 
-or better yet install stow accordingly on your distro and simply
+### Method 2
+Install stow accordingly on your distro and simply
 navigate to your home directory
 
 ` cd ~/`
@@ -36,6 +40,14 @@ clone the repo:
 install the dotfiles onto your home directory:
 
 `sudo stow -v -t ~/ dotfiles`
+
+for dependencies, comment out the install portion (see install script) of install script then
+
+`cd dotfiles/scripts/`
+
+`./install`
+
+
 
 ## Whats Included
 A lot of stuff,seriously, alot of stuff. Check out everything with a 

@@ -16,6 +16,10 @@
 
 # Install stow first, as its needed for the next step
 
+# For method 2, or if you only want the add dependencies portion add # in front of each line from
+
+#here
+
 sudo pacman -S stow
 
 # Clone dotfiles and install them accordingly
@@ -29,6 +33,9 @@ cd Dotfiles
 git clone https://github.com/rlingam/dotfiles.git
 
 sudo stow -v -t ~/ dotfiles
+
+
+# to here
 
 #intalls remaining packages using yaourt
 yaourt -S rxvt-unicode-256xresources i3-gaps-git i3blocks-gaps-git lemonbar-xft-git xorg-xwininfo imgur-screenshot-git xrectsel imagemagick bmpanel2
