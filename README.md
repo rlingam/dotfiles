@@ -14,9 +14,6 @@ need to.
 You can now use the install script(untested but should work) located in ~/scripts/
 you will have gitclone the directory somewewhere other than ~/ and extract the script and run it from there.
 
-You can clone the repository wherever you want, but to install, add 
-the files to your ~/ (/home/$USER/). 
-
 for a cleaner solution (but more work) see Method 2
 
 ### Method 2
