@@ -10,4 +10,4 @@ compton &
 bmpanel2 &
 
 #run dunst a notification daemon
-duns &
+dunst &
