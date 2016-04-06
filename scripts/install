@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+#
+# Author: rlingam
+#
+# Description: Installs dotfiles then its dependencies
+#
+# Requires: yaourt (script assumes you have yaourt installed beforehand)
+#
+# Usage: ./install (or sudo ./install if you have to)
+#        (this install script only works on arch, 
+#         however you can use this install script as reference to install it yourself 
+#         via package manager or compile from souce)
+#
+#
+
+# Install stow first, as its needed for the next step
+
+sudo pacman -S stow
+
+# Clone dotfiles and install them accordingly
+
+cd ~/
+
+mkdir Dotfiles
+
+cd Dotfiles
+
+git clone https://github.com/rlingam/dotfiles.git
+
+sudo stow -v -t ~/ dotfiles
+
+#intalls remaining packages using yaourt
+yaourt -S rxvt-unicode-256xresources i3-gaps-git i3blocks-gaps-git lemonbar-xft-git xorg-xwininfo imgur-screenshot-git xrectsel imagemagick bmpanel2
+
+#intalls packages using pacman
+sudo pacman -S compton alsa-utils rofi scrot redshift feh slop wmctrl xdotool openbox mpv vim zsh-syntax-highlighting screenfetch scrot thunar firefox ffmpeg feh dunst 
+
+
+

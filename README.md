@@ -31,7 +31,7 @@ change into the Dotfiles directory:
 
 clone the repo:
 
-`https://github.com/rlingam/dotfiles.git`
+`git clone https://github.com/rlingam/dotfiles.git`
 
 install the dotfiles onto your home directory:
 
