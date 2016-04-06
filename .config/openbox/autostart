@@ -8,3 +8,6 @@ compton &
 
 #run bmpanel2
 bmpanel2 &
+
+#run dunst a notification daemon
+duns &

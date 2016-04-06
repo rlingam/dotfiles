@@ -10,20 +10,20 @@
 #                   Use '$ sh ./slocker' to lock if MLOCK=true
 #
 
-MLOCK=false         # Lock manually only? [true|false]
-PLOCK=true          # Lock with password? [true|false]
+MLOCK=true         # Lock manually only? [true|false]
+PLOCK=false         # Lock with password? [true|false]
 
 function displaypic() {
     # Open fullscreen picture w/ feh
 
     # Slideshow
-    #feh -zxFY -D 5 --auto-zoom ~/Pictures/lewd\ pony/ponyporn/*/*
+    feh -zxFY -D 5 --auto-zoom ~/Pictures/spring/*
 
     # How to make Firefox "fullscreen" Profile http://pastebin.com/Gi5ke4WK
     # slideshow.html template http://pastebin.com/JDNPTSUH
     #firefox-nightly -P "fullscreen" -no-remote ~/slideshow.porn.html
 
-    surf -f ~/slideshow.porn.html
+    #surf -f ~/slideshow.porn.html
 
     # Static
     #feh -xFY --zoom fill ~/lewd-twily.jpg
