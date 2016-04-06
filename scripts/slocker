@@ -10,8 +10,8 @@
 #                   Use '$ sh ./slocker' to lock if MLOCK=true
 #
 
-MLOCK=true         # Lock manually only? [true|false]
-PLOCK=false         # Lock with password? [true|false]
+MLOCK=false         # Lock manually only? [true|false]
+PLOCK=true         # Lock with password? [true|false]
 
 function displaypic() {
     # Open fullscreen picture w/ feh
