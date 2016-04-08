@@ -277,32 +277,42 @@
     <keybind key="Print">
       <action name="Execute">
         <!--<command>scrot twily.png</command>-->
-        <command>sh ~/scripts/scrot twily.png</command>
+          <command>sh ~/scripts/scrot twily.png</command>
       </action>
     </keybind>
     <keybind key="C-Print">
       <action name="Execute">
-        <command>sh ~/scripts/importw importw.png</command>
+          <command>sh ~/scripts/importw importw.png</command>
+      </action>
+    </keybind>
+    <keybind key ="W-Print">
+      <action name="Execute">
+          <command>sh ~/scripts/teknik -s</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-Print">
+      <action name="Execute">
+          <command>sh ~/scripts/screencast</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>thunar ~/</command>
+          <command>thunar ~/</command>
       </action>
     </keybind>
     <keybind key="C-A-n">
       <action name="Execute">
-        <command>qutebrowser</command>
+          <command>qutebrowser</command>
       </action>
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>urxvt</command>
+          <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="W-c">
       <action name="Execute">
-        <command> sh ~/scripts/tiling/drawterm </command>
+          <command> sh ~/scripts/tiling/drawterm </command>
       </action>
     </keybind>
 
