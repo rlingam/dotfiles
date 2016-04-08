@@ -292,7 +292,7 @@
     </keybind>
     <keybind key="C-A-n">
       <action name="Execute">
-        <command>firefox</command>
+        <command>qutebrowser</command>
       </action>
     </keybind>
     <keybind key="W-Return">

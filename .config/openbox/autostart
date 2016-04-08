@@ -6,8 +6,9 @@ feh --bg-fill ~/water_fantasy_art_artwork_huts_2560x1440_.jpg &
 # Run Compton
 compton &
 
-#run bmpanel2
-bmpanel2 &
+#run lemonbar 
+sh ~/scripts/lemonbar &
 
 #run dunst a notification daemon
 dunst &
+
