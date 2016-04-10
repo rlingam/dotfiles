@@ -46,7 +46,7 @@ URxvt*letterSpace: -1
 ! -- perl
 URxvt.perl-ext-common: default,clipboard,vtwheel,matcher
 URxvt.keysym.Mod4-v: perl:clipboard:paste
-URxvt.url-launcher: /usr/local/bin/firefox
+URxvt.url-launcher: /usr/bin/qutebrowser 
 URxvt.matcher.button: 1
 !URxvt.colorUL: #9472ec
 

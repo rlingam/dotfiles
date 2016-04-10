@@ -315,7 +315,16 @@
           <command> sh ~/scripts/tiling/drawterm </command>
       </action>
     </keybind>
-
+    <keybind key ="W-F11">
+      <action name="Execute">
+          <command>redshift -b 1.0</command>
+      </action>
+    </keybind>
+    <keybind key="W-F12">
+      <action name="Execute">
+          <command>pkill redshift</command>
+      </action>
+    </keybind>    
 
     <keybind key="W-A-KP_7"> <action name="Execute"> <command> sh ~/scripts/tiling/grid 1 7 </command> </action> </keybind>
     <keybind key="W-A-KP_8"> <action name="Execute"> <command> sh ~/scripts/tiling/grid 1 8 </command> </action> </keybind>
@@ -356,15 +365,15 @@
     <keybind key="W-C-KP_3"> <action name="Execute"> <command> sh ~/scripts/tiling/grid 3 3 </command> </action> </keybind>
 
 
-    <keybind key="W-S-KP_8"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 1 </command> </action> </keybind> <!-- inc left -->
-    <keybind key="W-S-KP_7"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 2 </command> </action> </keybind> <!-- inc top -->
-    <keybind key="W-S-KP_9"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 3 </command> </action> </keybind> <!-- dec left -->
-    <keybind key="W-S-KP_4"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 4 </command> </action> </keybind> <!-- dec top -->
+    <keybind key="W-S-KP_4"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 1 </command> </action> </keybind> <!-- inc left -->
+    <keybind key="W-S-KP_8"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 2 </command> </action> </keybind> <!-- inc top -->
+    <keybind key="W-S-KP_3"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 3 </command> </action> </keybind> <!-- dec left -->
+    <keybind key="W-S-KP_2"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 1 4 </command> </action> </keybind> <!-- dec top -->
 
-    <keybind key="W-S-KP_2"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 1 </command> </action> </keybind> <!-- inc right -->
-    <keybind key="W-S-KP_3"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 2 </command> </action> </keybind> <!-- inc bot -->
+    <keybind key="W-S-KP_6"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 1 </command> </action> </keybind> <!-- inc right -->
+    <keybind key="W-S-KP_9"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 2 </command> </action> </keybind> <!-- inc bot -->
     <keybind key="W-S-KP_1"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 3 </command> </action> </keybind> <!-- dec right -->
-    <keybind key="W-S-KP_6"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 4 </command> </action> </keybind> <!-- dec bot -->
+    <keybind key="W-S-KP_7"> <action name="Execute"> <command> sh ~/scripts/tiling/ext.grid 2 4 </command> </action> </keybind> <!-- dec bot -->
 
 
     <keybind key="W-x"> <action name="Execute"> <command> sh ~/scripts/tiling/snap.all </command> </action> </keybind>
@@ -386,9 +395,13 @@
 
     <keybind key="W-l"> <action name="Execute"> <command> ~/scripts/i3lock-fancy/lock</command> </action> </keybind>
 
-    <keybind key="C-KP_Add">  <action name="Execute"> <command> amixer set Master 3+ unmute </command> </action> </keybind>
-    <keybind key="C-KP_Subtract"> <action name="Execute"> <command> amixer set Master 3- unmute </command> </action> </keybind>
+    <!--<keybind key="C-KP_Add">  <action name="Execute"> <command> amixer set Master 3+ unmute </command> </action> </keybind> -->
+    <!-- <keybind key="C-KP_Subtract"> <action name="Execute"> <command> amixer set Master 3- unmute </command> </action> </keybind> -->
+    <keybind key="C-KP_Add"> <action name="Execute"> <command> sh ~/scripts/volumeup </command> </action> </keybind> 
+    <keybind key="C-KP_Subtract"> <action name="Execute"> <command> sh ~/scripts/volumedown </command> </action> </keybind>    
     <keybind key="C-m">     <action name="Execute"> <command> amixer set Master toggle </command> </action> </keybind>
+    <keybind key="W-F3"> <action name="Execute"> <command>sh ~/scripts/volumeup </command> </action> </keybind>
+    <keybind key="W-F2"> <action name="Execute"> <command> sh ~/scripts/volumedown </command> </action> </keybind>
 
     <keybind key="C-A-space">
       <action name="ShowMenu">
