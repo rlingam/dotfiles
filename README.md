@@ -11,7 +11,7 @@ need to.
 ## Installation
 
 ### Method 1 (preferred)
-You can now use the install script (untested but should work) located in ~/scripts/
+You can now use the install script located in ~/scripts/
 you will have gitclone the directory somewewhere other than ~/ and extract the script and run it from there.
 
 for a cleaner solution (but more work) see Method 2

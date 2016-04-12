@@ -42,6 +42,7 @@ yaourt -S rxvt-unicode-256xresources i3-gaps-git i3blocks-gaps-git lemonbar-xft-
 
 #intalls packages using pacman
 sudo pacman -S compton alsa-utils rofi scrot redshift feh slop wmctrl xdotool openbox mpv vim zsh-syntax-highlighting screenfetch scrot thunar firefox ffmpeg feh dunst awk maim xclip wget
+sxhkd weechat mpd ncmpcpp
 
 
 
