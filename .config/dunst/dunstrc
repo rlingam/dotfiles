@@ -154,7 +154,7 @@
     #width = 3
     #color = "#aaaaaa"
     width = 0
-    color = "#111113"
+    color = "#1d232e"
 
 [shortcuts]
 
@@ -180,20 +180,20 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#26282B"
-    foreground = "#CECFD1"
+    background = "#1d232e"
+    foreground = "#cccac0"
     timeout = 5
 
 [urgency_normal]
     #background = "#285577"
     #foreground = "#CECFD1"
-    background = "#26282B"
-    foreground = "#CECFD1"
+    background = "#1d232e"
+    foreground = "#cccac0"
     timeout = 5
 
 [urgency_critical]
-    background = "#26282B"
-    foreground = "#CECFD1"
+    background = "#1d232e"
+    foreground = "#cccac0"
     timeout = 0
 
 
