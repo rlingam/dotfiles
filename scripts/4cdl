@@ -16,7 +16,7 @@
 # Optional rename tool for reuploading images to 4can: http://pastebin.com/bLqHyBPg
 #
 
-P=/home/twily/4cdl-images               # Download Path
+P=/home/gg/4cdl-images               # Download Path
 PW=5532                                 # Index access code
 
 C=true                                  # Clear output
