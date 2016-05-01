@@ -1,7 +1,7 @@
 # Programs that will run after Openbox has started
 
 # Set the wallpaper
-feh --bg-fill ~/eS5Be.jpg &
+feh --bg-fill ~/o0wHWd7.png &
 
 # Run Compton
 compton &
