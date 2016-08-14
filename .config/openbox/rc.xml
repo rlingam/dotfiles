@@ -271,7 +271,7 @@
     <keybind key="W-p">
       <action name="Execute">
           <!--<command>bashrun</command>-->
-          <command>rofi -show run</command>
+          <command>sh ~/scripts/rofi</command>
       </action>
     </keybind>
     <keybind key="Print">
