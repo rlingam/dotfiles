@@ -64,7 +64,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 450 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
+bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -197,12 +197,18 @@ bindsym $mod+r mode "resize"
 bindsym $mod+F2 exec amixer set Master -q 5%-
 bindsym $mod+F3 exec amixer set Master -q 5%+
 bindsym $mod+F1 exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
+bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play
 #bindsym XF86AudioPause exec playerctl pause
 #bindsym XF86AudioNext exec playerctl next
 #bindsym XF86AudioPrev exec playerctl previous
+
+#Brightness
+#bindsym XF86
 
 #Wallpaper
 exec_always --no-startup-id feh --bg-fill  ~/water_fantasy_art_artwork_huts_2560x1440_.jpg 
