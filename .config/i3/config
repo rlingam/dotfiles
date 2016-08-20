@@ -225,6 +225,9 @@ bindsym $mod+F10 exec pkill -f x11grab
 bindsym $mod+F11 exec redshift -b 1.0 
 bindsym $mod+F12 exec pkill redshift 
 
+# Screen Lock
+bindsym Pause exec i3lock-fancy
+
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
 #bindsym $mod+KP_7 exec sh ~/scripts/tiling/grid 2 7
