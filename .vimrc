@@ -54,8 +54,11 @@
  "
  " " let Vundle manage Vundle, required
  Plugin 'VundleVim/Vundle.vim'
-
  Plugin 'scrooloose/nerdtree'
+ Plugin 'scrooloose/syntastic'
+ Plugin 'tpope/vim-surround'
+ Plugin 'valloric/youcompleteme'
+ Plugin 'jiangmiao/auto-pairs'
 
  
  " All of your Plugins must be added before the following line
