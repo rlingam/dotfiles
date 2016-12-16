@@ -238,7 +238,8 @@ bindsym Pause exec i3lock-fancy
 # after you've installed i3blocks, move the config from /etc/i3blocks.conf to ~/.config/i3blocks/
 
 bar {
-        status_command i3status  
+       # uncomment the line below and comment out status_command i3blocks to font to return it to the default config
+       # status_command i3status    
         status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
         position bottom
         font Inconsolata 12
