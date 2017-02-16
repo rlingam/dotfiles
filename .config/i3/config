@@ -76,8 +76,8 @@ new_window pixel 1
 new_float pixel 1
 
 # Gaps
-set $default_gaps_inner 20
-set $default_gaps_outer 25 
+set $default_gaps_inner 5
+set $default_gaps_outer 5 
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
