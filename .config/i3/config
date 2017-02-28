@@ -43,6 +43,9 @@ set $light-gray          #606163
 set $dark-gray           #111113
 set $light-blue          #68e0b8
 
+# Variables 
+set $term urxvt
+
 # window colors
 # #                       border             background         text                 indicator
 client.focused          $bg-color            $bg-color          $text-color          #00ff00
@@ -58,13 +61,14 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
+#bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
+bindsym $mod+p exec dmenu_run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -76,10 +80,10 @@ new_window pixel 1
 new_float pixel 1
 
 # Gaps
-set $default_gaps_inner 5
-set $default_gaps_outer 5 
-gaps inner $default_gaps_inner
-gaps outer $default_gaps_outer
+#set $default_gaps_inner 5
+#set $default_gaps_outer 5 
+#gaps inner $default_gaps_inner
+#gaps outer $default_gaps_outer
 
 # change focus
 bindsym $mod+j focus left
@@ -157,6 +161,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # assign different programs to different workspaces
 assign [class = "firefox"] 1
+assign [class = "qutebrowser"] 1
 
 # reload the configuration file
 bindsym $mod+Shift+x reload
@@ -164,6 +169,12 @@ bindsym $mod+Shift+x reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Reboot
+bindsym $mod+Shift+Delete exec reboot
+
+# Shutdown
+bindsym Ctrl+$mod+Alt+Delete exec sudo shutdown now
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -189,7 +200,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Ctrl+r mode "resize"
 
 # Multimedia 
 
@@ -226,7 +237,17 @@ bindsym $mod+F11 exec redshift -b 1.0
 bindsym $mod+F12 exec pkill redshift 
 
 # Screen Lock
-bindsym Pause exec i3lock-fancy
+bindsym Pause exec i3lock
+
+# Letter Keys Mappings
+
+bindsym $mod+q exec qutebrowser
+
+bindsym $mod+m exec $term -e mpd ncmpcpp
+
+bindsym $mod+i exec $term -e htop
+
+bindsym $mod+r exec $term -e ranger
 
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
@@ -239,9 +260,9 @@ bindsym Pause exec i3lock-fancy
 
 bar {
        # uncomment the line below and comment out status_command i3blocks to font to return it to the default config
-       # status_command i3status    
-        status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-        position bottom
+        status_command i3status    
+        #status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
+        position top 
         font Inconsolata 12
 
     colors {
