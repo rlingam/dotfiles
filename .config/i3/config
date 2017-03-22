@@ -67,8 +67,8 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
-bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
+#bindsym $mod+p exec dmenu_run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -80,10 +80,10 @@ new_window pixel 1
 new_float pixel 1
 
 # Gaps
-#set $default_gaps_inner 5
-#set $default_gaps_outer 5 
-#gaps inner $default_gaps_inner
-#gaps outer $default_gaps_outer
+set $default_gaps_inner 5
+set $default_gaps_outer 5 
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
 
 # change focus
 bindsym $mod+j focus left
@@ -237,13 +237,13 @@ bindsym $mod+F11 exec redshift -b 1.0
 bindsym $mod+F12 exec pkill redshift 
 
 # Screen Lock
-bindsym Pause exec i3lock
+bindsym Pause exec i3lock-fancy
 
 # Letter Keys Mappings
 
 bindsym $mod+q exec qutebrowser
 
-bindsym $mod+Shift+m exec $term -e mpd ncmpcpp
+bindsym $mod+Shift+m exec $term -e mpd && ncmpcpp
 
 bindsym $mod+m exec $term -e ncmpcpp
 
@@ -264,8 +264,8 @@ bindsym $mod+c exec $term -e weechat
 
 bar {
        # uncomment the line below and comment out status_command i3blocks to font to return it to the default config
-        status_command i3status    
-        #status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
+        #status_command i3status    
+        status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
         position top 
         font Inconsolata 12
 
