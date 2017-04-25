@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
 # Dependencies : i3-gaps,  i3blocks-gap, compton(for rofi transparency and animations),
-#                alsa-utils, redshift, feh, jq, xclip
+#                alsa-utils, redshift, feh, xclip
 #                
 
 set $mod Mod4
