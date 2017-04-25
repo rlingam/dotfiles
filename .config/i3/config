@@ -9,8 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
-# Dependencies : i3-gaps,  i3blocks-gap, lemonbar-xft, compton(for rofi transparency),
-#                alsa-utils, scrot, imgur-screenshot-git, redshift, feh 
+# Dependencies : i3-gaps,  i3blocks-gap, compton(for rofi transparency and animations),
+#                alsa-utils, redshift, feh, jq, xclip
+#                
 
 set $mod Mod4
 
@@ -225,11 +226,11 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 exec_always --no-startup-id feh --bg-fill  ~/water_fantasy_art_artwork_huts_2560x1440_.jpg 
 
 # Screenshot
-bindsym Print exec scrot '%Y-%m-%d_$wx$h.png' -e -z 'mv $f ~/Pictures/'
-bindsym $mod+Print exec imgur-screenshot 
+bindsym Print exec ~/scripts/uguush/uguush -f -p ~/ 
+bindsym $mod+Print exec ~/scripts/uguush/uguush -f 
 
 # Screencast
-bindsym $mod+F9 exec ~/scripts/screencast
+bindsym $mod+F9 exec ~/scripts/screencast2
 bindsym $mod+F10 exec pkill -f x11grab
 
 # Redshift

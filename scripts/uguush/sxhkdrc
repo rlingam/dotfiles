@@ -1,0 +1,11 @@
+# uguu window
+ctrl + shift + 2
+	uguush -w
+
+# uguu fullscreen
+ctrl + shift + 3
+	uguush -f
+
+# uguu selection
+ctrl + shift + @4
+	uguush -s

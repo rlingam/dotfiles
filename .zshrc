@@ -101,7 +101,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias e="vim"
     alias eIR='vim ~/.irssi/config'
     alias C='clear'
-    alias upl='sh ./scripts/upload-teknik'
+    alias upl='sh ./scripts/uguush/uguush -u '
 
 # }}}
 #
