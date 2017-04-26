@@ -1,7 +1,24 @@
 ![Screenshot of my desktop] (http://i.imgur.com/8wZ8IDL.png?1)
 ![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
 
-## dotfiles
+## Setup
+See the terminal pic above for some related information. 
+
+Distro: Arch Linux
+Window Manager: i3-gaps
+i3bar: i3blocks-gaps
+Login/Display Manager: lightdm 
+Terminal Emulator: urxvt (rxvt-unicode, rxvt-unicode-patched in AUR) 
+Shell: zsh + oh-my-zsh
+Font: Inconsolata
+Music Player: mpd + ncmpcpp
+Video Player: mpv
+IRC Client: weechat
+Text Editor: vim
+Browser: qutebrowser
+
+
+## Dotfiles
 dotfiles are how you personalize your system. These are mine
 
 If you want to give these dotfiles a try make sure you read the code
@@ -54,10 +71,11 @@ want, remove what you don't need, and build on what you do use.
 ## Things you should know
 The tiling folder has scripts which requires dependencies including 
 slop or xrectsel, urxvt, wmctrl, xdotool, xwininfo. The tiling folder
-is to be used with openbox.
+is to be used with openbox for tiling functionality on openbox, and  
+full sized keyboard with a numberpad is preferred.
 
-the script folder may have dependencies too, make sure you check 
-if it doesn't seem to work.
+The script folder may have dependencies too, make sure you check for 
+ dependecies if something doesn't seem to work.
 
 make sure you change the path files in your programs and especially
 zsh/zshrc since file path will be different on your machine.
