@@ -13,6 +13,7 @@ Shell: zsh + oh-my-zsh
 Font: Inconsolata
 Music Player: mpd + ncmpcpp
 Video Player: mpv
+Image Viewer/Desktop Wallpaper Display: Feh
 IRC Client: weechat
 Text Editor: vim
 Browser: qutebrowser
