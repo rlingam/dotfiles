@@ -7,10 +7,13 @@ See the terminal pic above for some related information.
 * Distro: Arch Linux
 * Window Manager: i3-gaps
 * i3bar: i3blocks-gaps
+* Application Launcher: rofi
 * Login/Display Manager: lightdm 
+* Compositor: Compton
 * Terminal Emulator: urxvt (rxvt-unicode, rxvt-unicode-patched in AUR) 
 * Shell: zsh + oh-my-zsh
 * Font: Inconsolata
+* Notification: dunst
 * Music Player: mpd + ncmpcpp
 * Video Player: mpv
 * Image Viewer/Desktop Wallpaper Display: Feh
@@ -26,15 +29,31 @@ If you want to give these dotfiles a try make sure you read the code
 over, things will go much smoothly that way, and even modify if you 
 need to.
 
+## Whats Included
+A lot of stuff,seriously, alot of stuff. Check out everything with a 
+file browser and see what kind of stuff is there. Change what you 
+want, remove what you don't need, and build on what you do use.
+
+## Things you should know
+The tiling folder has scripts which requires dependencies including 
+slop or xrectsel, urxvt, wmctrl, xdotool, xwininfo. The tiling folder
+is to be used with openbox for tiling functionality on openbox, and  
+full sized keyboard with a numberpad is preferred.
+
+The script folder may have dependencies too, make sure you check for 
+dependecies if something doesn't seem to work.
+
+make sure you change the path files in your programs and especially
+zsh/zshrc since file path will be different on your machine.
+
+If fonts dont work properly make sure you have the right font
+installed then refresh, if it still doesn't work make sure
+you have the right font configured on the corresponding
+config file.
+
 ## Installation
 
 ### Method 1 (preferred)
-You can now use the install script located in ~/scripts/
-you will have gitclone the directory somewewhere other than ~/ and extract the script and run it from there.
-
-for a cleaner solution (but more work) see Method 2
-
-### Method 2
 Install stow accordingly on your distro and simply
 navigate to your home directory
 
@@ -62,29 +81,13 @@ for dependencies, comment out the install portion (see install script) of instal
 
 `./install`
 
+### Method 2 
+You can now use the install script located in ~/scripts/
+you will have gitclone the directory somewewhere other than ~/ and extract the script and run it from there.
 
+Beware however the script may not work properly as its not thoroughly tested. 
 
-## Whats Included
-A lot of stuff,seriously, alot of stuff. Check out everything with a 
-file browser and see what kind of stuff is there. Change what you 
-want, remove what you don't need, and build on what you do use.
-
-## Things you should know
-The tiling folder has scripts which requires dependencies including 
-slop or xrectsel, urxvt, wmctrl, xdotool, xwininfo. The tiling folder
-is to be used with openbox for tiling functionality on openbox, and  
-full sized keyboard with a numberpad is preferred.
-
-The script folder may have dependencies too, make sure you check for 
- dependecies if something doesn't seem to work.
-
-make sure you change the path files in your programs and especially
-zsh/zshrc since file path will be different on your machine.
-
-If fonts dont work properly make sure you have the right font
-installed then refresh, if it still doesn't work make sure
-you have the right font configured on the corresponding
-config file.
+Method one is still recommended
 
 ## Thanks
 Thanks for taking the time to view and hopefully download
