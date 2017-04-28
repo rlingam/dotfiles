@@ -13,7 +13,7 @@ See the terminal pic above for some related information.
 * Terminal Emulator: urxvt (rxvt-unicode, rxvt-unicode-patched in AUR) 
 * Shell: zsh + oh-my-zsh
 * Font: Inconsolata
-* Notification: dunst
+* Notification Daemon: dunst
 * Music Player: mpd + ncmpcpp
 * Video Player: mpv
 * Image Viewer/Desktop Wallpaper Display: Feh
