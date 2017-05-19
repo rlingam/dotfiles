@@ -4,22 +4,22 @@
 ## Setup
 See the terminal pic above for some related information. 
 
-* Distro: Arch Linux
-* Window Manager: i3-gaps
-* i3bar: i3blocks-gaps
-* Application Launcher: rofi
-* Login/Display Manager: lightdm 
-* Compositor: Compton
-* Terminal Emulator: urxvt (rxvt-unicode, rxvt-unicode-patched in AUR) 
-* Shell: zsh + oh-my-zsh
-* Font: Inconsolata
-* Notification Daemon: dunst
-* Music Player: mpd + ncmpcpp
-* Video Player: mpv
-* Image Viewer/Desktop Wallpaper Display: Feh
-* IRC Client: weechat
-* Text Editor: vim
-* Browser: qutebrowser
+* Distro: `Arch Linux`
+* Window Manager: `i3-gaps`
+* i3bar: `i3blocks-gaps`
+* Application Launcher: `rofi`
+* Login/Display Manager: `lightdm`
+* Compositor: `Compton`
+* Terminal Emulator: `urxvt (rxvt-unicode, rxvt-unicode-patched in AUR)` 
+* Shell: `zsh + oh-my-zsh`
+* Font: `Inconsolata`
+* Notification Daemon: `dunst`
+* Music Player: `mpd + ncmpcpp`
+* Video Player: `mpv` 
+* Image Viewer/Desktop Wallpaper Display: `feh`
+* IRC Client: `weechat`
+* Text Editor: `vim`
+* Browser: `qutebrowser`
 
 
 ## Dotfiles
