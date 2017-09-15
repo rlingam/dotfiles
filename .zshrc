@@ -10,7 +10,7 @@ bindkey "^[^[[C" forward-word
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/twily/.zshrc'
+zstyle :compinstall filename '/home/gg/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -126,7 +126,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias sr="screen -d -r"
     alias 4cdl="sh ~/scripts/4cdl"
     alias 4trips="sh ~/scripts/4trips"
-    alias usrmnt="/home/twily/scripts/usrmount"
+    alias usrmnt="/home/gg/scripts/usrmount"
 # }}}
 #
 ## Privileged access
@@ -153,7 +153,7 @@ fi
     alias vmi='vim'
 #}}}
 
-alias ncmpcppr='ncmpcpp -h twily'
+alias ncmpcppr='ncmpcpp -h gg'
 
 alias fancy="sh ~/scripts/compton"
 alias fortune-send="sh ~/scripts/fortune-send"
@@ -175,12 +175,12 @@ PROMPT="%{$fg_bold[grey]%}%{$reset_color%}> "
 RPROMPT="%{$fg_bold[blue]%}%~%{$reset_color%}"
 
 
-export PATH=$PATH:/home/twily/.gem/ruby/2.1.0/bin
+export PATH=$PATH:/home/gg/.gem/ruby/2.1.0/bin
 
 #framebuffer colors
-if [ "$TERM" = "linux" ]; then
-    /home/twily/.tty-colorize
-fi
+#if [ "$TERM" = "linux" ]; then
+#    /home/gg/.tty-colorize
+#fi
 
 
 #functions
