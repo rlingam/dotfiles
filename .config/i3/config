@@ -9,8 +9,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
-# Dependencies : i3-gaps,  i3blocks-gap, compton(for rofi transparency and animations),
-#                alsa-utils, redshift, feh, xclip, pywal
+# Dependencies : i3-gaps, compton(for rofi transparency and animations),
+#                alsa-utils, redshift, feh, xclip, pywal, polybar
 #                
 
 set $mod Mod4
@@ -31,18 +31,18 @@ font pango:Inconsolata 12
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Variables for colors
-set $bg-color            #606163
-set $inactive-bg-color   #111113
-set $text-color          #cecfd1
-set $inactive-text-color #aaabad
-set $urgent-bg-color     #d753a4
-set $bg-color-rofi       #111113
-set $bc-color-rofi       #111113
-set $text-color-rofi     #cecfd1
-set $dark-purple         #6f67e6
-set $light-gray          #606163
-set $dark-gray           #111113
-set $light-blue          #68e0b8
+#set $bg-color            #606163
+#set $inactive-bg-color   #111113
+#set $text-color          #cecfd1
+#set $inactive-text-color #aaabad
+#set $urgent-bg-color     #d753a4
+#set $bg-color-rofi       #111113
+#set $bc-color-rofi       #111113
+#set $text-color-rofi     #cecfd1
+#set $dark-purple         #6f67e6
+#set $light-gray          #606163
+#set $dark-gray           #111113
+#set $light-blue          #68e0b8
 
 # Variables 
 set $term urxvt
