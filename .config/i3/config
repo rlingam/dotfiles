@@ -81,8 +81,9 @@ new_window pixel 1
 new_float pixel 1
 
 # Gaps
+smart_gaps on
 set $default_gaps_inner 5
-set $default_gaps_outer 5 
+set $default_gaps_outer 5
 gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer
 
@@ -264,26 +265,28 @@ bindsym $mod+c exec $term -e weechat
 #
 # after you've installed i3blocks, move the config from /etc/i3blocks.conf to ~/.config/i3blocks/
 
-bar {
+#bar {
        # uncomment the line below and comment out status_command i3blocks to font to return it to the default config
-        #status_command i3status    
-        status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-        position top 
-        font Inconsolata 12
+#       status_command i3status    
+#       status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
+#        i3bar_command ~/scripts/bar
+#        position top 
+#        font Inconsolata 12
 
-    colors {
-        background $dark-gray 
-        statusline $text-colors
+#    colors {
+#        background $dark-gray 
+#        statusline $text-colors
 
 #                         Border     Background   Text Color
-       focused_workspace $dark-gray  $dark-gray   $dark-purple
-       inactive_workspace $dark-gray $dark-gray   $light-gray
-       urgent_workspace  $dark-gray  $dark-gray   $light-blue
-  }
-}
+#       focused_workspace $dark-gray  $dark-gray   $dark-purple
+#       inactive_workspace $dark-gray $dark-gray   $light-gray
+#       urgent_workspace  $dark-gray  $dark-gray   $light-blue
+# }
+#}
 
 exec compton
 exec mpd
 exec ~/scripts/startup
+exec ~/scripts/launchPolyBar 
 #exec firefox 
 #exec_always sh ~/scripts/lemonbar | lemonbar -p -d -g 1780x30+70+20 -B '#111113' -f 'Inconsolata-10'
