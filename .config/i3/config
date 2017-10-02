@@ -31,18 +31,18 @@ font pango:Inconsolata 12
 # font, it doesn’t scale on retina/hidpi displays.
 
 # Variables for colors
-#set $bg-color            #606163
-#set $inactive-bg-color   #111113
-#set $text-color          #cecfd1
-#set $inactive-text-color #aaabad
-#set $urgent-bg-color     #d753a4
-#set $bg-color-rofi       #111113
-#set $bc-color-rofi       #111113
-#set $text-color-rofi     #cecfd1
-#set $dark-purple         #6f67e6
-#set $light-gray          #606163
-#set $dark-gray           #111113
-#set $light-blue          #68e0b8
+set $bg-color            #606163
+set $inactive-bg-color   #111113
+set $text-color          #cecfd1
+set $inactive-text-color #aaabad
+set $urgent-bg-color     #d753a4
+set $bg-color-rofi       #111113
+set $bc-color-rofi       #111113
+set $text-color-rofi     #cecfd1
+set $dark-purple         #6f67e6
+set $light-gray          #606163
+set $dark-gray           #111113
+set $light-blue          #68e0b8
 
 # Variables 
 set $term urxvt
@@ -67,9 +67,8 @@ bindsym $mod+Return exec $term
 # kill focused window
 bindsym $mod+Shift+c kill
 
-# start dmenu (a program launcher)
-bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
-#bindsym $mod+p exec dmenu_run
+# start rofi(a program launcher) 
+ bindsym $mod+p exec rofi -show run -lines 3 -eh 2 -width 100 -padding 350 -opacity "85" -bw 0 -bc "$bc-color-rofi" -bg "$bg-color-rofi" -fg "$text-color-rofi" -hlbg "$bg-color-rofi" -hlfg "#9575cd" -font "Inconsolata 18"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -287,7 +286,7 @@ bindsym $mod+c exec $term -e weechat
 exec compton
 exec mpd
 exec ~/scripts/startup
-exec ~/scripts/launchPolyBar 
+exec_always --no-startup-id $HOME/scripts/launchPolyBar
 exec wal -R
 #exec firefox 
 #exec_always sh ~/scripts/lemonbar | lemonbar -p -d -g 1780x30+70+20 -B '#111113' -f 'Inconsolata-10'
