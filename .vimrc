@@ -47,25 +47,65 @@
  filetype off                  " required
 
  " set the runtime path to include Vundle and initialize
- set rtp+=~/.vim/bundle/Vundle.vim
- call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
  " " alternatively, pass a path where Vundle should install plugins
  " "call vundle#begin('~/some/path/here')
  "
  " " let Vundle manage Vundle, required
- Plugin 'VundleVim/Vundle.vim'
- Plugin 'scrooloose/nerdtree'
- Plugin 'scrooloose/syntastic'
- Plugin 'tpope/vim-surround'
- Plugin 'valloric/youcompleteme'
- Plugin 'jiangmiao/auto-pairs'
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'tpope/vim-surround'
+" Plugin 'valloric/youcompleteme'
+" Plugin 'jiangmiao/auto-pairs'
 
  
  " All of your Plugins must be added before the following line
- call vundle#end()            " required
+" call vundle#end()            " required
  filetype plugin indent on    " required
  " " To ignore plugin indent changes, instead use:
  " "filetype plugin on
+ "
+ " Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-master branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+" Dynamically chaning vim colorscheme (to be used to pywall)
+Plug 'dylanaraps/wal.vim'
+" Initialize plugin system
+call plug#end()
 
 
 
@@ -166,7 +206,7 @@ autocmd BufEnter * :set number
 
 let g:solarized_termcolors=256
 set background=dark
-colorscheme twily
+colorscheme wal 
 
 " Set extra options when running in GUI mode
 if has("gui_running")
