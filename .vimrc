@@ -104,6 +104,10 @@ Plug '~/my-prototype-plugin'
 
 " Dynamically chaning vim colorscheme (to be used to pywall)
 Plug 'dylanaraps/wal.vim'
+
+" Insert or delete quotes, brackets, or parens in pairs
+Plug 'jiangmiao/auto-pairs'
+
 " Initialize plugin system
 call plug#end()
 
