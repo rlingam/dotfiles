@@ -114,6 +114,9 @@ Plug 'scrooloose/syntastic'
 " Code completion engine for vim
 Plug 'valloric/youcompleteme'
 
+" Fuzzy file, buffer, mru, ag, etc finder.
+Plug 'kien/ctrlp.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -240,6 +243,9 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
+
+nnoremap <leader>pf :CtrlP<CR>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -374,6 +380,7 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
 
 
 function SmoothScroll(up)
