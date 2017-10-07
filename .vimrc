@@ -108,6 +108,12 @@ Plug 'dylanaraps/wal.vim'
 " Insert or delete quotes, brackets, or parens in pairs
 Plug 'jiangmiao/auto-pairs'
 
+" Syntax checking hacks for vim
+Plug 'scrooloose/syntastic'
+
+" Code completion engine for vim
+Plug 'valloric/youcompleteme'
+
 " Initialize plugin system
 call plug#end()
 
