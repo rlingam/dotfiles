@@ -31,7 +31,7 @@ need to.
 
 ## Whats Included
 A lot of stuff,seriously, alot of stuff. Check out everything with a 
-file browser and see what kind of stuff is there. Change what you 
+web browser and see what kind of stuff is there. Change what you 
 want, remove what you don't need, and build on what you do use.
 
 ## Things you should know
@@ -50,6 +50,8 @@ If fonts dont work properly make sure you have the right font
 installed then refresh, if it still doesn't work make sure
 you have the right font configured on the corresponding
 config file.
+
+The colors of my system change dynamically thanks to [pywal](https://github.com/dylanaraps/pywal). Just install it along side my configs and everything should work. If you don't want to use pywal, the old configs will still work also.
 
 ## Installation
 
