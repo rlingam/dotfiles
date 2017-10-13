@@ -1,12 +1,12 @@
-![Screenshot of my desktop] (http://i.imgur.com/8wZ8IDL.png?1)
-![Screenshot of my terminal] (http://i.imgur.com/vtXUPlM.png?1)
-
+<!--![Screenshot of my desktop](http://i.imgur.com/8wZ8IDL.png?1)-->
+<!--![Screenshot of my terminal](http://i.imgur.com/vtXUPlM.png?1)-->
+![screenshot of my desktop](https://i.imgur.com/axh346e.png)
 ## Setup
 See the terminal pic above for some related information. 
 
 * Distro: `Arch Linux`
 * Window Manager: `i3-gaps`
-* i3bar: `i3blocks-gaps`
+* bar: `polybar`
 * Application Launcher: `rofi`
 * Login/Display Manager: `lightdm`
 * Compositor: `Compton`
