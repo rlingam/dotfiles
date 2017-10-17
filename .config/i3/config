@@ -9,6 +9,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 #
+# Please see https://github.com/rlingam/dotfiles for the complete documentation.
+#
 # Dependencies : i3-gaps, compton(for rofi transparency and animations),
 #                alsa-utils, redshift, feh, xclip, pywal, polybar
 #                
@@ -262,7 +264,8 @@ bindsym $mod+c exec $term -e weechat
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #
-# after you've installed i3blocks, move the config from /etc/i3blocks.conf to ~/.config/i3blocks/
+# If using i3blocks: after you've installed i3blocks, move the config from /etc/i3blocks.conf to ~/.config/i3blocks/
+# The Default bar is polybar see ~/.config/polybar to configure polybar.
 
 #bar {
        # uncomment the line below and comment out status_command i3blocks to font to return it to the default config
