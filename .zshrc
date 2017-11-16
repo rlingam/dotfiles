@@ -105,13 +105,47 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias MP="ncmpcpp"
     alias eO="vim ~/.config/openbox/rc.xml"
     alias shutdown="sudo shutdown now"
+    alias sdn='sudo shutdown now'
     alias eI="vim ~/.config/i3/config"
     alias eIB='vim ~/.config/i3blocks/i3blocks.conf'
     alias e="vim"
     alias eIR='vim ~/.irssi/config'
     alias C='clear'
     alias upl='sh ./scripts/uguush/uguush -u '
-
+    alias h='cd ~/ && ls -a'
+    alias d="cd ~/Documents && ls -a"
+    alias D="cd ~/Downloads && ls -a"
+    alias p="cd ~/Pictures && ls -a"
+    alias v="cd ~/Videos && ls -a"
+    alias m="cd ~/Music && ls -a"
+    alias b="cd ~/books && ls -a"
+    alias s="cd ~/scripts && ls -a"
+    alias r="cd / && ls -a"
+    alias cf="cd ~/.config && ls -a"
+    alias cfb="vim ~/.config/Scripts/bashrc"
+    alias cfz="vim ~/.zshrc"
+    alias cfv="vim ~/.config/Scripts/vimrc"
+    alias cfr="vim ~/.config/ranger/rc.conf.base"
+    alias cfi="vim ~/.config/i3/config"
+    alias cfq="vim ~/.config/qutebrowser/keys.conf.base"
+    alias cfQ="vim ~/.config/qutebrowser/qutebrowser.conf"
+    alias cfm="vim ~/.config/mutt/muttrc"
+    alias cfM="vim ~/.config/moc/keymap"
+    alias cff="vim ~/.config/Scripts/folders"
+    alias cfc="vim ~/.config/Scripts/configs"
+    alias cft="vim ~/.config/termite/config"
+    alias cfT="vim ~/.config/Scripts/tmux.conf"
+    alias dots='cd ~/dotfiles && ls -a'
+    alias eb="vim ~/Documents/LaTeX/uni.bib"
+    alias cv="vim ~/Documents/LaTeX/cv.tex"
+    alias cfl="vim ~/.config/mutt/lukexyz.info"
+    alias cfx="vim ~/.config/mutt/luxmyth.info"
+    alias cfk="vim ~/.config/mutt/kulade.cock"
+    alias cfo="vim ~/.config/mutt/kulade.info"
+    alias cfa="vim ~/.config/mutt/aliases"
+    alias cfp="vim ~/.config/polybar/config"
+    alias cfd="vim ~/.Xdefaults"
+    alias TO="vim ~/Creations/Videos/todo.md"
 # }}}
 #
 ## New commands  {{{
@@ -276,5 +310,10 @@ export INFINALITY_FT_USE_VARIOUS_TWEAKS=true
 
 
 # Enable Zsh command highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Backspace fix 
+TERM=xterm-256color
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
