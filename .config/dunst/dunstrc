@@ -1,6 +1,6 @@
 [global]
     #font = Monospace 8
-    font = Droid Sans 10
+    font = Inconsolata 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -141,14 +141,14 @@
     dmenu = /usr/bin/dmenu -p dunst:
     
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox -new-tab
+    browser = /usr/bin/qutebrowser
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left 
 
     # Paths to default icons.
     #icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_folders = /usr/share/icons/Flattr/status/scalable/:/usr/share/icons/Flattr/devices/scalable/
+    #icon_folders = /usr/share/icons/Flattr/status/scalable/:/usr/share/icons/Flattr/devices/scalable/
 
 [frame]
     #width = 3

@@ -178,7 +178,9 @@ bindsym $mod+Shift+Delete exec urxvt -e reboot
 
 # Shutdown
 #bindsym Ctrl+$mod+Alt+Delete exec urxvt -e  sudo shutdown now
-bindsym Ctrl+$mod+Alt+Delete exec poweroff 
+bindsym Ctrl+$mod+Alt+Delete exec sudo shutdown -h now 
+
+ 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -241,7 +243,7 @@ bindsym $mod+F11 exec redshift -b 1.0
 bindsym $mod+F12 exec pkill redshift 
 
 # Screen Lock
-bindsym Pause exec i3lock-fancy
+bindsym Pause exec i3lock
 
 # Letter Keys Mappings
 
@@ -256,6 +258,8 @@ bindsym $mod+i exec $term -e htop
 bindsym $mod+r exec $term -e ranger
 
 bindsym $mod+c exec $term -e weechat
+
+bindsym $mod+u exec $term -e bc 
 
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
@@ -289,7 +293,8 @@ bindsym $mod+c exec $term -e weechat
 exec compton
 exec mpd
 exec ~/scripts/startup
-exec_always --no-startup-id $HOME/scripts/launchPolyBar
+exec_always --no-startup-id $HOME/dotfiles/scripts/launchPolyBar
 exec wal -R
+exec xrdb -merge ~/.Xresources
 #exec firefox 
 #exec_always sh ~/scripts/lemonbar | lemonbar -p -d -g 1780x30+70+20 -B '#111113' -f 'Inconsolata-10'

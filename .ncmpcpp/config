@@ -290,7 +290,7 @@ now_playing_suffix = "$/b"
 ## Attention: It doesn't support song format anymore.
 ## Use `ncmpcpp --now-playing SONG_FORMAT` instead.
 ##
-#execute_on_song_change = ""
+execute_on_song_change = "~/dotfiles/scripts/mpdnotify"
 #
 #playlist_show_remaining_time = no
 #
