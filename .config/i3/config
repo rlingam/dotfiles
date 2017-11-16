@@ -296,5 +296,6 @@ exec ~/scripts/startup
 exec_always --no-startup-id $HOME/dotfiles/scripts/launchPolyBar
 exec wal -R
 exec xrdb -merge ~/.Xresources
+exec --no-startup-id dunst
 #exec firefox 
 #exec_always sh ~/scripts/lemonbar | lemonbar -p -d -g 1780x30+70+20 -B '#111113' -f 'Inconsolata-10'
