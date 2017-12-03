@@ -9,11 +9,8 @@ xrdb -merge "${HOME}/.Xresources"
 wal -R
 
 
-feh ~/eS5Be.jpg --bg-fill
 sh ~/scripts/compton
 
-numlockx &
-bmpanel2 &
 
 # default is openbox
 session=${1:-openbox}
