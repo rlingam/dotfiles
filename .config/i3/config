@@ -12,7 +12,8 @@
 # Please see https://github.com/rlingam/dotfiles for the complete documentation.
 #
 # Dependencies : i3-gaps, compton(for rofi transparency and animations),
-#                alsa-utils, redshift, feh, xclip, pywal, polybar
+#                alsa-utils, redshift, feh, xclip, pywal, polybar, 
+#                betterlockscreen-git 
 #                
 
 set $mod Mod4
