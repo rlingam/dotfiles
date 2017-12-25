@@ -243,7 +243,7 @@ bindsym $mod+F11 exec redshift -b 1.0
 bindsym $mod+F12 exec pkill redshift 
 
 # Screen Lock
-bindsym Pause exec i3lock-fancy 
+bindsym Pause exec betterlockscreen -l 
 
 # Letter Keys Mappings
 
