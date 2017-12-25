@@ -243,7 +243,7 @@ bindsym $mod+F11 exec redshift -b 1.0
 bindsym $mod+F12 exec pkill redshift 
 
 # Screen Lock
-bindsym Pause exec i3lock
+bindsym Pause exec i3lock-fancy 
 
 # Letter Keys Mappings
 
@@ -257,7 +257,7 @@ bindsym $mod+i exec $term -e htop
 
 bindsym $mod+r exec $term -e ranger
 
-bindsym $mod+c exec $term -e weechat
+bindsym $mod+c exec $term -e irssi 
 
 bindsym $mod+u exec $term -e bc 
 
@@ -293,7 +293,7 @@ bindsym $mod+u exec $term -e bc
 exec compton
 exec mpd
 exec ~/scripts/startup
-exec_always --no-startup-id $HOME/dotfiles/scripts/launchPolyBar
+exec_always --no-startup-id $HOME/Dotfiles/dotfiles/scripts/launchPolyBar
 exec wal -R
 exec xrdb -merge ~/.Xresources
 exec --no-startup-id dunst
