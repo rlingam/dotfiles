@@ -25,8 +25,11 @@ c.url.searchengines = {
     'np' : 'https://nyaa.pantsu.cat/search?c=_&q={}', # searches through nyaa.pantsu.cat
 
         }
+# Settings
+c.fonts.monospace = 'Inconsolata'
 
-
+# Startpage
+c.url.start_pages = '~/Documents/startpages/tilde/index.html'
 
 
 
