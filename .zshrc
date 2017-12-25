@@ -135,7 +135,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cfc="vim ~/.config/Scripts/configs"
     alias cft="vim ~/.config/termite/config"
     alias cfT="vim ~/.config/Scripts/tmux.conf"
-    alias dots='cd ~/dotfiles && ls -a'
+    alias dots='cd ~/Dotfiles/dotfiles && ls -a'
     alias eb="vim ~/Documents/LaTeX/uni.bib"
     alias cv="vim ~/Documents/LaTeX/cv.tex"
     alias cfl="vim ~/.config/mutt/lukexyz.info"
