@@ -5,15 +5,15 @@ xrdb -merge "${HOME}/.Xresources"
 #setxkbmap -option '' -option kpdl:dot -option caps:swapescape no
 
 # Add this to your .xinitrc or whatever file starts programs on startup.
-# -R restores the last colorscheme that was in use.
+#restores the last colorscheme that was in use.
+cat ~/.cache/wal/sequencesi &
 wal -R
-
 
 sh ~/scripts/compton
 
 
 # default is openbox
-session=${1:-openbox}
+session=${1:-i3}
 
 case $session in
     awesome       ) exec awesome;;
