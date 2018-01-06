@@ -9,7 +9,7 @@ URxvt*depth: 24
 URxvt*geometry: 100x25
 ! uncomment next two to fix old colorscheme
 !URxvt.borderColor: #1c1c1c
-!URxvt.internalBorder: 1
+URxvt.internalBorder: 10
 URxvt.borderless: true
 !URxvt.cursorUnderline: true
 !URxvt.cursorBlink: true
