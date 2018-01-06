@@ -118,5 +118,5 @@ for dependencies, you can install the dependencies manually by looking at the in
 
 ## Thanks
 Thanks for taking the time to view and hopefully download
-my dotfiles. Special thanks to everyone who
-i forked my dotfiles off of.
+my dotfiles. Special thanks to everyone whose work i might've used to create these dotfiles.
+
