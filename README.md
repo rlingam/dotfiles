@@ -109,11 +109,7 @@ install the dotfiles onto your home directory:
 
 `sudo stow -v -t ~/ dotfiles`
 
-for dependencies, you can install the dependencies manually by looking at the install script for the dependencies and installing them manually via package manager:
-
-`cd dotfiles/scripts/`
-
-`./install`
+for dependencies, you can install the dependencies manually by looking at the install script for the dependencies and installing them manually via package manager.
 
 
 ## Thanks
