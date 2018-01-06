@@ -49,6 +49,8 @@ set $light-blue          #68e0b8
 
 # Variables 
 set $term urxvt
+set $browser qutebrowser
+set $irc irssi
 
 # window colors
 # #                       border             background         text                 indicator
@@ -248,7 +250,7 @@ bindsym Pause exec betterlockscreen -l
 
 # Letter Keys Mappings
 
-bindsym $mod+q exec qutebrowser
+bindsym $mod+q exec $browser 
 
 bindsym $mod+Shift+m exec $term -e mpd && ncmpcpp
 
@@ -258,7 +260,7 @@ bindsym $mod+i exec $term -e htop
 
 bindsym $mod+r exec $term -e ranger
 
-bindsym $mod+c exec $term -e irssi 
+bindsym $mod+c exec $term -e $irc 
 
 bindsym $mod+u exec $term -e bc 
 
