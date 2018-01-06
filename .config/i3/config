@@ -262,6 +262,8 @@ bindsym $mod+c exec $term -e irssi
 
 bindsym $mod+u exec $term -e bc 
 
+bindsym $mod+Shift+w exec betterlockscreen -u ~/Pictures/Wallpapers/  && wal -i ~/.cache/i3lock/wall.png
+
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
 #bindsym $mod+KP_7 exec sh ~/scripts/tiling/grid 2 7
@@ -295,6 +297,7 @@ exec compton
 exec mpd
 exec ~/scripts/startup
 exec_always --no-startup-id $HOME/Dotfiles/dotfiles/scripts/launchPolyBar
+exec cat ~/.cache/wal/sequences &
 exec wal -R
 exec xrdb -merge ~/.Xresources
 exec --no-startup-id dunst
