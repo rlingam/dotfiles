@@ -234,11 +234,11 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 #exec_always --no-startup-id feh --bg-fill  ~/water_fantasy_art_artwork_huts_2560x1440_.jpg 
 
 # Screenshot
-bindsym Print exec ~/scripts/uguush/uguush -f -p ~/ 
-bindsym $mod+Print exec ~/scripts/uguush/uguush -f 
+bindsym Print exec ~/Dotfiles/dotfiles/scripts/uguush/uguush -f -p ~/ 
+bindsym $mod+Print exec ~/Dotfiles/dotfiles/scripts/uguush/uguush -f 
 
 # Screencast
-bindsym $mod+F9 exec ~/scripts/screencast2
+bindsym $mod+F9 exec ~/Dotfiles/dotfiles/scripts/screencast2
 bindsym $mod+F10 exec pkill -f x11grab
 
 # Redshift
@@ -264,7 +264,7 @@ bindsym $mod+c exec $term -e $irc
 
 bindsym $mod+u exec $term -e bc 
 
-bindsym $mod+Shift+w exec betterlockscreen -u ~/Pictures/Wallpapers/  && wal -i ~/.cache/i3lock/wall.png
+bindsym $mod+Shift+w exec betterlockscreen -u ~/Pictures/Wallpapers/  && wal -c -i ~/.cache/i3lock/wall.png
 
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
