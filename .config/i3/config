@@ -266,6 +266,8 @@ bindsym $mod+u exec $term -e bc
 
 bindsym $mod+Shift+w exec betterlockscreen -u ~/Pictures/Wallpapers/  && wal -c -i ~/.cache/i3lock/wall.png
 
+bindsym $mod+y exec $term -e calcurse
+
 # Tiling Scripts
 #bindsym $mod+c exec sh ~/scripts/tiling/drawterm
 #bindsym $mod+KP_7 exec sh ~/scripts/tiling/grid 2 7
