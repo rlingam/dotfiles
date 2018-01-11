@@ -6,7 +6,7 @@ xrdb -merge "${HOME}/.Xresources"
 
 # Add this to your .xinitrc or whatever file starts programs on startup.
 #restores the last colorscheme that was in use.
-cat ~/.cache/wal/sequencesi &
+cat ~/.cache/wal/sequences &
 wal -R
 
 sh ~/scripts/compton
