@@ -35,11 +35,6 @@ web browser and see what kind of stuff is there. Change what you
 want, remove what you don't need, and build on what you do use.
 
 ## Things you should know
-The tiling folder has scripts which requires dependencies including
-slop or xrectsel, urxvt, wmctrl, xdotool, xwininfo. The tiling folder
-is to be used with openbox for tiling functionality on openbox, and  
-full sized keyboard with a numberpad is preferred.
-
 The scripts in the scripts folder may have dependencies too, make sure you check the relative script for
 its dependecies if something doesn't seem to work.
 
