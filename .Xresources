@@ -1,20 +1,13 @@
 ! Xresource file
 
-!dzen2.font: -*-lemon-*-r-normal-*-*-100-*-*-*-*-*-*
-dzen2.font: -*-droidsans-*-r-normal-*-*-100-*-*-*-*-*-*
-dzen2.foreground: #cecfd1
-dzen2.background: #222326
-
 URxvt*depth: 24
-URxvt*geometry: 100x25
+!URxvt*geometry: 100x25
 ! uncomment next two to fix old colorscheme
 !URxvt.borderColor: #1c1c1c
 URxvt.internalBorder: 10
 URxvt.borderless: true
 !URxvt.cursorUnderline: true
 !URxvt.cursorBlink: true
-
-URxvt*iconFile: /usr/share/icons/Flattr/apps/scalable/bash.svg
 
 !URxvt*.transparent: true
 !URxvt*.shading: 15
@@ -59,12 +52,6 @@ URxvt.matcher.button: 1
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
-
-! -- tabs
-!URxvt.tabbed.tabbar-fg: 8
-!URxvt.tabbed.tabbar-bg: 0
-!URxvt.tabbed.tab-fg: 15
-!URxvt.tabbed.tab-bg: 0
 
 ! Rofi color theme
 !rofi.color-enabled: true
@@ -115,98 +102,6 @@ rofi.color-normal: #1c1c1c, #cecfd1, #1c1c1c, #1c1c1c, #b19cd9
 rofi.color-active: #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #b19cd9
 rofi.color-urgent: #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #b19cd9
 
-! magenta
-!*.color5:       #6c6f76
-!*.color13:      #6c6f76
-
-! cyan
-!*.color6:       #8c828a
-!*.color14:      #8c828a
-
-! white
-!*.color7:       #cccac0
-!*.color15:      #cccac0
- 
-
-
-!colors made w/ schemer 2 and http://terminal.sexy/ snowy 
-! special
-!*.foreground:   #cccac0
-!*.background:   #24272c
-!*.cursorColor:  #cccac0
-
-! black
-!*.color0:       #2a252f
-!*.color8:       #694338
-
-! red
-!*.color1:       #463940
-!*.color9:       #7d6b55
-
-! green
-!*.color2:       #9f9dac
-!*.color10:      #606163
-
-! yellow
-!*.color3:       #b3b6bd
-!*.color11:      #3c4f56
-
-! blue
-!*.color4:       #898a8c
-!*.color12:      #2a252f
-
-! magenta
-!*.color5:       #70737a
-!*.color13:      #463940
-
-! cyan
-!*.color6:       #61555f
-!*.color14:      #9f9dac
-
-! white
-!*.color7:       #c5c9ca
-!*.color15:      #b3b6bd
-
-
-! colors made with schemer2 and http://terminal.sexy/ bed 
-! special
-!*.foreground:   #cccac0
-!*.background:   #24272c
-!*.cursorColor:  #cccac0
-
-!black
-!*.color0:       #606163
-!*.color8:       #5f7b91
-
-! red
-!*.color1:       #3b3d47
-!*.color9:       #aaa7a2
-
-! green
-!*.color2:       #7C95AB
-!*.color10:      #a6b9c2
-
-! yellow
-!*.color3:       #606163
-!*color11:      #61604c
-
-! blue
-!*.color4:       #47525a
-!*.color12:      #aaa7a2
-
-! magenta
-!*.color5:       #6c6f76
-!*.color13:      #847966
-
-! cyan
-!*.color6:       #8c828a
-!*.color14:      #cccac0
-
-! white
-!*.color7:       #7c95ab
-!*.color15:      #847966
-
-
 ! made w/ http://terminal.sexy/ twily
 ! special
 *.foreground:   #cecfd1
@@ -244,44 +139,4 @@ rofi.color-urgent: #1c1c1c, #1c1c1c, #1c1c1c, #1c1c1c, #b19cd9
 ! white
 *.color7:       #aaabad
 *.color15:      #cecfd1
-
-
-!made w/ http://terminal.sexy/ & schemer2 moonrise
-! special
-!*.foreground:   #cecfd1
-!*.background:   #1c1c1c
-!*.cursorColor:  #cecfd1
-
-! black
-!*.color0:       #1c1c1c
-!*.color8:       #606163
-
-! red
-!*.color1:       #d54a56
-!*.color9:       #f66a79
-
-! green
-!*.color2:       #36f4a6
-!*.color10:      #7ff8c6
-
-! yellow
-!*.color3:       #f4a636
-!*.color11:      #f8c67f
-
-! blue
-!*.color4:       #6f67e6
-!*.color12:      #8c86fc
-
-! magenta
-!*.color5:       #b19cd9
-!*.color13:      #c0aee0
-
-! cyan
-!*.color6:       #36f4a6
-!*.color14:      #7ff8c6
-
-! white
-!*.color7:       #aaabad
-!*.color15:      #cecfd1
-
 
