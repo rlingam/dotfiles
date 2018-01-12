@@ -301,7 +301,6 @@ exec compton
 exec mpd
 exec ~/scripts/startup
 exec_always --no-startup-id $HOME/Dotfiles/dotfiles/scripts/launchPolyBar
-exec cat ~/.cache/wal/sequences &
 exec wal -R
 exec xrdb -merge ~/.Xresources
 exec --no-startup-id dunst
