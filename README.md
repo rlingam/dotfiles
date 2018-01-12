@@ -17,7 +17,7 @@ See the terminal pic above for some related information.
 * Music Player: `mpd + ncmpcpp`
 * Video Player: `mpv`
 * Image Viewer/Desktop Wallpaper Display: `feh`
-* IRC Client: `weechat`
+* IRC Client: `irssi`
 * Text Editor: `vim`
 * Browser: `qutebrowser`
 
