@@ -4,6 +4,9 @@ xrdb -merge "${HOME}/.Xresources"
 
 #setxkbmap -option '' -option kpdl:dot -option caps:swapescape no
 
+# Start polybar
+sh ~/Dotfiles/dotfiles/scripts/launchPolyBar
+
 # Add this to your .xinitrc or whatever file starts programs on startup.
 #restores the last colorscheme that was in use.
 wal -R
@@ -11,7 +14,7 @@ wal -R
 sh ~/scripts/compton
 
 
-# default is openbox
+# default is i3 
 session=${1:-i3}
 
 case $session in
