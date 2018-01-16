@@ -299,7 +299,6 @@ bindsym $mod+y exec $term -e calcurse
 
 exec compton
 exec mpd
-exec ~/scripts/startup
 exec_always --no-startup-id $HOME/Dotfiles/dotfiles/scripts/launchPolyBar
 exec wal -R
 exec xrdb -merge ~/.Xresources
