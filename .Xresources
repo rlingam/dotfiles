@@ -2,7 +2,7 @@
 
 URxvt*depth: 24
 !URxvt*geometry: 100x25
-! uncomment next two to fix old colorscheme
+! uncomment next line to fix old colorscheme
 !URxvt.borderColor: #1c1c1c
 URxvt.internalBorder: 10
 URxvt.borderless: true
@@ -23,32 +23,15 @@ URxvt*scrollTtyKeypress: true
 URxvt*loginShell: false
 
 ! -- font
-!URxvt.font: xft:Terminus:pixelsize=12
-!URxvt.font: xft:Droid Sans Mono:size=10
-!URxvt.font: xft:Ubuntu Mono:size=10
-!URxvt.font: xft:PragmataPro:size=10
 URxvt.font: xft:Inconsolata:size=12
-!URxvt.font: xft:Liberation Mono:size=10
-!URxvt.font: xft:berry:pixelsize=12
-!URxvt.font: xft:tewi-11
-!URxvt.font: xft:terminus:size=11
-!URxvt.font: xft:terminus:antialias=false:size=11
-!URxvt.font: xft:tamsyn:size=8
-!URxvt.font: xft:cure-8
-!URxvt.font: xft:profont:size=8
-!URxvt.font: xft:sourcecodepro:size=12
-!URxvt.font: xft:Roboto:size=11
-!URxvt.font: xft:anonymouspro:size=14
 URxvt.boldFont:
 URxvt*letterSpace: -1
-!URxvt*lineSpace: 2
 
 ! -- perl
 URxvt.perl-ext-common: default,clipboard,vtwheel,matcher
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 URxvt.url-launcher: /usr/bin/qutebrowser
 URxvt.matcher.button: 1
-!URxvt.colorUL: #9472ec
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
