@@ -11,7 +11,7 @@ sh ~/Dotfiles/dotfiles/scripts/launchPolyBar
 #restores the last colorscheme that was in use.
 wal -R
 
-sh ~/scripts/compton
+sh ~/Dotfiles/dotfiles/scripts/compton
 
 
 # default is i3 

@@ -236,7 +236,7 @@ bindsym $mod+Shift+w exec betterlockscreen -u ~/Pictures/Wallpapers/  && wal -c 
 bindsym $mod+y exec $term -e calcurse
 
 # Execute on startup
-exec compton
+exec_always --no-startup-id sh ~/Dotfiles/dotfiles/scripts/compton 
 exec mpd
 exec_always --no-startup-id $HOME/Dotfiles/dotfiles/scripts/launchPolyBar
 exec wal -R

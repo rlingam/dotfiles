@@ -2,7 +2,7 @@
 killall compton
 
 if [ "$1" = "game" ]; then
-    compton --config /home/twily/.compton/powersaver.conf -b
+    compton --config /home/gg/.config/compton/powersaver.conf -b
 else
-    compton --config /home/twily/.compton/compton.conf -b
+    compton --config /home/gg/.config/compton/compton.conf -b
 fi

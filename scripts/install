@@ -38,10 +38,10 @@ sudo stow -v -t ~/ dotfiles
 # to here
 
 # intalls remaining packages using yaourt
-sudo yaourt -S rxvt-unicode-patched i3-gaps lemonbar-xft-git xorg-xwininfo imgur-screenshot-git xrectsel imagemagick bmpanel2 neofetch python2-potr betterlockscreen-git python-pywal-git vim-plug mpd-notification
+sudo yaourt -S rxvt-unicode-patched i3-gaps lemonbar-xft-git xorg-xwininfo imgur-screenshot-git xrectsel imagemagick bmpanel2 neofetch python2-potr betterlockscreen-git python-pywal-git vim-plug mpd-notification compton-git
 
 # intalls packages using pacman
-sudo pacman -S compton alsa-utils rofi scrot redshift feh slop wmctrl xdotool openbox mpv vim zsh-syntax-highlighting scrot thunar qutebrowser ffmpeg feh dunst awk maim xclip wget mpd ncmpcpp youtube-dl mpc w3m irssi
+sudo pacman -S alsa-utils rofi scrot redshift feh slop wmctrl xdotool openbox mpv vim zsh-syntax-highlighting scrot thunar qutebrowser ffmpeg feh dunst awk maim xclip wget mpd ncmpcpp youtube-dl mpc w3m irssi
 
 # Sets up first theme 
 betterlockscreen -u ~/water_fantasy_art_artwork_huts_2560x1440_.jpg  && wal -c -i ~/water_fantasy_art_artwork_huts_2560x1440_.jpg
