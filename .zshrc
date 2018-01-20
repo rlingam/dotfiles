@@ -23,7 +23,7 @@ compinit
 
 # -- Variables
 export EDITOR="vim"
-export BROWSER="firefox"
+export BROWSER="qutebrowser"
 
 export GNUSTEP_USER_ROOT="${HOME}/GNUstep"
 
@@ -94,6 +94,8 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cacaplas="CACA_DRIVER=ncurses cacaplas"
     alias cacamoir="CACA_DRIVER=ncurses cacamoir"
     alias pac="sudo pacman -S"
+
+    # Edit configs
     alias eZ="vim ~/.zshrc"
     alias eS='vim ~/.config/sxhkd/sxhkdrc'
     alias eB='vim ~/.config/bspwm/bspwmrc'
@@ -108,16 +110,6 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias eIR='vim ~/.irssi/config'
     alias C='clear'
     alias upl='sh ./scripts/uguush/uguush -u '
-    alias h='cd ~/ && ls -a'
-    alias d="cd ~/Documents && ls -a"
-    alias D="cd ~/Downloads && ls -a"
-    alias p="cd ~/Pictures && ls -a"
-    alias v="cd ~/Videos && ls -a"
-    alias m="cd ~/Music && ls -a"
-    alias b="cd ~/books && ls -a"
-    alias s="cd ~/scripts && ls -a"
-    alias r="cd / && ls -a"
-    alias cf="cd ~/.config && ls -a"
     alias cfb="vim ~/.config/Scripts/bashrc"
     alias cfz="vim ~/.zshrc"
     alias cfv="vim ~/.config/Scripts/vimrc"
@@ -141,7 +133,20 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cfa="vim ~/.config/mutt/aliases"
     alias cfp="vim ~/.config/polybar/config"
     alias cfd="vim ~/.Xdefaults"
-    alias TO="vim ~/Creations/Videos/todo.md"
+    alias TO="vim ~/Creations/Videos/todo.md"       
+
+    # Movement aliases
+    alias h='cd ~/ && ls -a'
+    alias d="cd ~/Documents && ls -a"
+    alias D="cd ~/Downloads && ls -a"
+    alias p="cd ~/Pictures && ls -a"
+    alias v="cd ~/Videos && ls -a"
+    alias m="cd ~/Music && ls -a"
+    alias b="cd ~/books && ls -a"
+    alias s="cd ~/scripts && ls -a"
+    alias r="cd / && ls -a"
+    alias cf="cd ~/.config && ls -a"
+    
 # }}}
 #
 ## New commands  {{{
@@ -166,8 +171,13 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias 4cdl="sh ~/scripts/4cdl"
     alias 4trips="sh ~/scripts/4trips"
     alias usrmnt="/home/gg/scripts/usrmount"
+    alias nf='clear && neofetch'
 # }}}
-#
+
+# System Maintainence
+alias progs='pacman -Qet' # Lists installed programs
+alias orphans='pacman -Qdt' # Lists orphaned programs
+
 ## Privileged access
 if [ $UID -ne 0 ]; then
 	alias scat='sudo cat'
