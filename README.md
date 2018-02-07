@@ -4,17 +4,17 @@
 ## Setup
 See the terminal pic above for some related information.
 
-* Distro: `Arch Linux`
-* Window Manager: `i3-gaps`
-* bar: `polybar`
-* Application Launcher: `rofi`
+* Distro: `arch Linux`
+* Window Manager: `dwm`
+* bar: `slstatus`
+* Application Launcher: `dmenu`
 * Login/Display Manager: `None`
-* Compositor: `Compton`
-* Terminal Emulator: `urxvt (rxvt-unicode, rxvt-unicode-patched in AUR)`
+* Compositor: `none`
+* Terminal Emulator: `st`
 * Shell: `zsh + oh-my-zsh`
-* Font: `Inconsolata`
-* Notification Daemon: `dunst`
-* Music Player: `mpd + ncmpcpp`
+* Font: `terminus`
+* Notification Daemon: `none`
+* Music Player: `cmus`
 * Video Player: `mpv`
 * Image Viewer/Desktop Wallpaper Display: `feh`
 * IRC Client: `irssi`
