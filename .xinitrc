@@ -2,20 +2,11 @@
 
 xrdb -merge "${HOME}/.Xresources"
 
-#setxkbmap -option '' -option kpdl:dot -option caps:swapescape no
-
-# Start polybar
-sh ~/Dotfiles/dotfiles/scripts/launchPolyBar
-
-# Add this to your .xinitrc or whatever file starts programs on startup.
-#restores the last colorscheme that was in use.
-wal -R
-
-sh ~/Dotfiles/dotfiles/scripts/compton
-
+slstatus &
+redshift &
 
 # default is i3 
-session=${1:-i3}
+session=${1:-dwm}
 
 case $session in
     awesome       ) exec awesome;;
