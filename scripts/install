@@ -3,7 +3,7 @@
 #
 # Author: rlingam
 #
-# Description: Installs dotfiles then its dependencies
+# Description: Installs dotfiles and its dependencies
 #
 # Requires: yaourt (script assumes you have yaourt installed beforehand)
 #
@@ -41,19 +41,49 @@ sudo stow -v -t ~/ dotfiles
 sudo yaourt -S xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug 
 
 # intalls packages using pacman
-sudo pacman -S alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font
+sudo pacman -S alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu
 
-mkdir ~/Documents/programs/
+cd ~/suckless/
 
-cd ~/Documents/programs/
-
-# git clones st, dwm, dmenu, slstatus
+# git clones st, dwm, slock, slstatus
 # Its recommended you compile and install following programs in the given order
 git clone git://git.suckless.org/st
 
+cd ~/suckless/st 
+
+sudo make clean install
+
+echo "finished installing st (1/4)"
+
+
+
 git clone https://git.suckless.org/dwm
 
-git clone https://git.suckless.org/dmenu
+cd ~/suckless/dwm
+
+sudo make clean install
+
+echo "finished installing dwm (2/4)"
+
+
+
+git clone https://git.suckless.org/slock
+cd ~/suckless/slock
+
+sudo make clean install
+
+echo "finished installing slock (3/4)"
+
+
 
 git clone https://git.suckless.org/slstatus
 
+cd ~/suckless/slstatus 
+
+sudo make clean install
+
+
+
+echo "finished installing slstatus (4/4)"
+
+echo "Installation Finished"
