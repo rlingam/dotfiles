@@ -47,8 +47,13 @@ mkdir ~/Documents/programs/
 
 cd ~/Documents/programs/
 
-# git clones st and dwm
+# git clones st, dwm, dmenu, slstatus
+# Its recommended you compile and install following programs in the given order
 git clone git://git.suckless.org/st
 
 git clone https://git.suckless.org/dwm
+
+git clone https://git.suckless.org/dmenu
+
+git clone https://git.suckless.org/slstatus
 
