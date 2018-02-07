@@ -92,8 +92,6 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
 
     # Edit configs
     alias eZ="vim ~/.zshrc"
-    alias eS='vim ~/.config/sxhkd/sxhkdrc'
-    alias eB='vim ~/.config/bspwm/bspwmrc'
     alias Y="yaourt"
     alias MP="ncmpcpp"
     alias eO="vim ~/.config/openbox/rc.xml"
@@ -118,6 +116,10 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cfc="vim ~/.config/Scripts/configs"
     alias cft="vim ~/.config/termite/config"
     alias cfT="vim ~/.config/Scripts/tmux.conf"
+    alias cfst='cd ~/suckless/st/ && vim ~/suckless/st/config.h'
+    alias cfd='cd ~/suckless/dwm/ && vim ~/suckless/dwm/config.h'
+    alias cfslo='cd ~/suckless/slock/ && vim ~/suckless/slock/config.h'
+    alias cfsls='cd ~/suckless/slstatus/ && vim ~/suckless/slstatus/config.h'
     alias dots='cd ~/Dotfiles/dotfiles && ls -a'
     alias eb="vim ~/Documents/LaTeX/uni.bib"
     alias cv="vim ~/Documents/LaTeX/cv.tex"
@@ -127,7 +129,6 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias cfo="vim ~/.config/mutt/kulade.info"
     alias cfa="vim ~/.config/mutt/aliases"
     alias cfp="vim ~/.config/polybar/config"
-    alias cfd="vim ~/.Xdefaults"
     alias TO="vim ~/Creations/Videos/todo.md"       
 
     # Movement aliases
