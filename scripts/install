@@ -41,7 +41,7 @@ sudo stow -v -t ~/ dotfiles
 sudo yaourt -S xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug 
 
 # intalls packages using pacman
-sudo pacman -S alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi
+sudo pacman -S alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font
 
 mkdir ~/Documents/programs/
 
