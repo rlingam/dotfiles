@@ -8,7 +8,7 @@ See the terminal pic above for some related information.
 * Window Manager: `i3-gaps`
 * bar: `polybar`
 * Application Launcher: `rofi`
-* Login/Display Manager: `lightdm`
+* Login/Display Manager: `None`
 * Compositor: `Compton`
 * Terminal Emulator: `urxvt (rxvt-unicode, rxvt-unicode-patched in AUR)`
 * Shell: `zsh + oh-my-zsh`
