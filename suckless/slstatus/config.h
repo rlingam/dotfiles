@@ -52,11 +52,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	
-	{ cpu_perc,    "[CPU %3s%%]",   NULL          },
-	{ ram_perc,    "[RAM %2s%%]",   NULL          },
-	{ vol_perc,    "[VOL %s%] ",    "/dev/mixer1" },
-	{battery_perc, "[BAT %s%] ",    "BAT0"        },
-	{ipv4,         "[LAN IP %s ]",  "enp4s0"      },
-	{ipv4,         "[WLAN IP %s ]", "wlp3s0"      },
-	{ datetime,    "[ %s ]",        "%F %T"       },
+	{ cpu_perc,     "[CPU %3s%%]",    NULL          },
+	{ ram_perc,     "[RAM %2s%%]",    NULL          },
+	{ vol_perc,     "[VOL %s%] ",     "/dev/mixer1" },
+	{ battery_perc, "[BAT %s%] ",     "BAT0"        },
+	{ ipv4,         "[LAN IP %s ]",   "enp4s0"      },
+	{ ipv4,         "[WLAN IP %s ]",  "wlp3s0"      },
+	{ datetime,     "[ %s ]",         "%F %T"       },
 };
