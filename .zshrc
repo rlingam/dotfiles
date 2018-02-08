@@ -25,8 +25,6 @@ compinit
 export EDITOR="vim"
 export BROWSER="qutebrowser"
 
-export GNUSTEP_USER_ROOT="${HOME}/GNUstep"
-
 #AUTO_TITLE=true
 # -- Window title
 case $TERM in
@@ -79,9 +77,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
 	alias mkdir='mkdir -p -v'
 	alias ping='ping -c 5'
     alias bc='bc -q'
-    alias dvtm='DVTM_TERM=rxvt dvtm -M'
     alias cal="cal -3m"
-    alias mpdviz="mpdviz -iv wave"
     alias cacafire="CACA_DRIVER=ncurses cacafire"
     alias cacafire-old="CACA_DRIVER=ncurses cacafire-old"
     alias cacademo="CACA_DRIVER=ncurses cacademo"
@@ -93,43 +89,23 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     # Edit configs
     alias eZ="vim ~/.zshrc"
     alias Y="yaourt"
-    alias MP="ncmpcpp"
-    alias eO="vim ~/.config/openbox/rc.xml"
-    alias shutdown="sudo shutdown now"
     alias sdn='sudo shutdown now'
     alias eI="vim ~/.config/i3/config"
     alias eIB='vim ~/.config/i3blocks/i3blocks.conf'
     alias e="vim"
     alias eIR='vim ~/.irssi/config'
     alias C='clear'
-    alias upl='sh ./scripts/uguush/uguush -u '
-    alias cfb="vim ~/.config/Scripts/bashrc"
     alias cfz="vim ~/.zshrc"
-    alias cfv="vim ~/.config/Scripts/vimrc"
     alias cfr="vim ~/.config/ranger/rc.conf.base"
-    alias cfi="vim ~/.config/i3/config"
     alias cfq="vim ~/.config/qutebrowser/keys.conf.base"
     alias cfQ="vim ~/.config/qutebrowser/qutebrowser.conf"
-    alias cfm="vim ~/.config/mutt/muttrc"
     alias cfM="vim ~/.config/moc/keymap"
-    alias cff="vim ~/.config/Scripts/folders"
-    alias cfc="vim ~/.config/Scripts/configs"
-    alias cft="vim ~/.config/termite/config"
-    alias cfT="vim ~/.config/Scripts/tmux.conf"
+    alias cfT="vim ~/.tmux.conf"
     alias cfst='cd ~/suckless/st/ && vim ~/suckless/st/config.h'
     alias cfd='cd ~/suckless/dwm/ && vim ~/suckless/dwm/config.h'
     alias cfslo='cd ~/suckless/slock/ && vim ~/suckless/slock/config.h'
     alias cfsls='cd ~/suckless/slstatus/ && vim ~/suckless/slstatus/config.h'
     alias dots='cd ~/Dotfiles/dotfiles && ls -a'
-    alias eb="vim ~/Documents/LaTeX/uni.bib"
-    alias cv="vim ~/Documents/LaTeX/cv.tex"
-    alias cfl="vim ~/.config/mutt/lukexyz.info"
-    alias cfx="vim ~/.config/mutt/luxmyth.info"
-    alias cfk="vim ~/.config/mutt/kulade.cock"
-    alias cfo="vim ~/.config/mutt/kulade.info"
-    alias cfa="vim ~/.config/mutt/aliases"
-    alias cfp="vim ~/.config/polybar/config"
-    alias TO="vim ~/Creations/Videos/todo.md"       
 
     # Movement aliases
     alias h='cd ~/ && ls -a'
@@ -139,7 +115,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias v="cd ~/Videos && ls -a"
     alias m="cd ~/Music && ls -a"
     alias b="cd ~/books && ls -a"
-    alias s="cd ~/scripts && ls -a"
+    alias s="cd ~/Dotfiles/dotfiles/scripts && ls -a"
     alias r="cd / && ls -a"
     alias cf="cd ~/.config && ls -a"
     
@@ -150,23 +126,13 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
 	alias du1='du --max-depth=1'
 	alias hist='history | grep'
 	alias openports='ss --all --numeric --processes --ipv4 --ipv6'
-	alias sf='cls;screenfetch;~/scripts/colors-hex'
-    #alias sfs='cls;sh ~/Div/screenfetch'
-    alias sfs='echo "";sh ~/Div/screenfetch'
 	alias scrot="scrot -e 'optipng $f'"
-    alias scrotw='sh ~/scripts/scrotw'
+    alias scrotw='sh ~/Dotfiles/dotfiles/scripts/scrotw'
 	alias fehslide="feh -.zZD5 --keep-zoom-vp -Bblack -^feh"
 	alias nightly="firefox-nightly"
-	alias tsaver="sh ~/scripts/pipes.x -n 2"
-    alias calc="galculator"
-    alias sc="screen -S"
-    alias sx="screen -x"
-    alias sl="screen -ls"
-    alias sd="screen -d"
-    alias sr="screen -d -r"
-    alias 4cdl="sh ~/scripts/4cdl"
-    alias 4trips="sh ~/scripts/4trips"
-    alias usrmnt="/home/gg/scripts/usrmount"
+	alias tsaver="sh ~/Dotfiles/dotfiles/scripts/pipes.x -n 2"
+    alias 4cdl="sh ~/Dotfiles/dotfiles/scripts/4cdl"
+    alias 4trips="sh ~/Dotfiles/dotfiles/scripts/4trips"
     alias nf='clear && neofetch'
 # }}}
 
@@ -197,11 +163,6 @@ fi
     alias vi='vim'
     alias vmi='vim'
 #}}}
-
-alias ncmpcppr='ncmpcpp -h gg'
-
-alias fancy="sh ~/scripts/compton"
-alias fortune-send="sh ~/scripts/fortune-send"
 
 # -- Prompt/PS1
 autoload -U promptinit
@@ -313,9 +274,5 @@ export INFINALITY_FT_USE_VARIOUS_TWEAKS=true
 
 # Enable Zsh command highlighting
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Backspace fix 
-TERM=xterm-256color
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
