@@ -105,6 +105,7 @@ for example
 `ln -s /home/USER/suckless/dwm/config.h  /home/USER/Dotfiles/dotfiles/suckless/dwm/config.h`
 
 Replace USER with your username
+
 for dependencies, you can install the dependencies manually by looking at the install script for the dependencies and installing them manually via package manager.
 
 
