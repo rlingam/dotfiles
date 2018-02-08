@@ -4,7 +4,7 @@
 ## Setup
 See the terminal pic above for some related information.
 
-* Distro: `arch Linux`
+* Distro: `arch linux`
 * Window Manager: `dwm`
 * bar: `slstatus`
 * Application Launcher: `dmenu`
@@ -30,9 +30,10 @@ over, things will go much smoothly that way, and even modify if you
 need to.
 
 ## Whats Included
-A lot of stuff,seriously, alot of stuff. Check out everything with a
-web browser and see what kind of stuff is there. Change what you
-want, remove what you don't need, and build on what you do use.
+Although I try to keep everything as minimal as possible. Make sure 
+you check out everything with a web browser and see what kind of 
+stuff is there. Change what you want, remove what you don't need, 
+and build on what you do use.
 
 ## Things you should know
 The scripts in the scripts folder may have dependencies too, make sure you check the relative script for
@@ -46,24 +47,14 @@ installed then refresh, if it still doesn't work make sure
 you have the right font configured on the corresponding
 config file.
 
-The colors of my system change dynamically thanks to [pywal](https://github.com/dylanaraps/pywal). Just install it along side my configs and everything should work. If you don't want to use pywal, the old configs will still work also. The install script automatically installs pywal.
-
 ## Installation
 ### Method 1
 
 You can now use the install script to install these dotfiles.
 
-Change to home directory:
+Change to Download directory:
 
-`cd ~/`
-
-Make Dotfiles directory:
-
-`mkdir Dotfiles`
-
-Change into dotfiles directory:
-
-`cd Dotfiles`
+`cd ~/Downloads`
 
 Clone the repo:
 
@@ -77,13 +68,16 @@ Run script:
 
 `./install`
 
+After the installation is succesfully finished, delete redundant dotfiles
+
+`rm -rf ~/Downloads/dotfiles`
 
 Beware however the script may not work properly as its not thoroughly tested.
 
 Method two might be better if you want to manully install dependencies or fine tune the install to your liking.
 
 ### Method 2 
-Install stow accordingly on your distro and simply
+Make sure `ln` is installed on your distro and simply
 navigate to your home directory
 
 ` cd ~/`
@@ -100,9 +94,15 @@ clone the repo:
 
 `git clone https://github.com/rlingam/dotfiles.git`
 
-install the dotfiles onto your home directory:
+install what you need or want onto your home directory:
 
-`sudo stow -v -t ~/ dotfiles`
+`ln -s [where you want it installed] [what you want installed]`
+
+for example
+
+`ln -s /home/USER/suckless/dwm/config.h  /home/USER/Dotfiles/dotfiles/suckless/dwm/config.h`
+
+
 
 for dependencies, you can install the dependencies manually by looking at the install script for the dependencies and installing them manually via package manager.
 
