@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Terminus (TTF):size=14" };
-static const char dmenufont[]       = "Terminus (TTF):size=14";
+static const char *fonts[]          = { "Liberation Mono:size=14" };
+static const char dmenufont[]       = "Liberation Mono:size=14";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -45,8 +45,8 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define XF86MonBrightnessDown		0x1008ff03
-#define XF86MonBrightnessUp			0x1008ff02
-#define XF86AudioMute				0x1008ff12
+#define XF86MonBrightnessUp		0x1008ff02
+#define XF86AudioMute			0x1008ff12
 #define XF86AudioLowerVolume		0x1008ff11
 #define XF86AudioRaiseVolume		0x1008ff13
 #define MODKEY Mod4Mask
@@ -75,12 +75,12 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-    { 0,                            XF86MonBrightnessDown,     spawn,          {.v = cmdbrightnessdown } },
+    	{ 0,                            XF86MonBrightnessDown,     spawn,          {.v = cmdbrightnessdown } },
 	{ 0,                            XF86MonBrightnessUp,       spawn,          {.v = cmdbrightnessup } },
 	{ 0,                            XF86AudioMute,             spawn,          {.v = cmdsoundtoggle } },
 	{ 0,                            XF86AudioRaiseVolume,      spawn,          {.v = cmdsoundup } },
 	{ 0,                            XF86AudioLowerVolume,      spawn,          {.v = cmdsounddown } },
-    { MODKEY,                       XK_s,      spawn,          {.v = cmdlock } }, 
+    	{ MODKEY,                       XK_s,      spawn,          {.v = cmdlock } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
