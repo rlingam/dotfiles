@@ -1,0 +1,119 @@
+#!/bin/bash
+#
+# This script installs my dotfiles
+# https://github.com/rlingam/dotfiles
+#
+#TODO: 1. create uninstall choice w/ function. 2. finish install_suckless 3. test script
+
+dotfiles_dir=~/Videos/
+
+packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu git stow"
+
+aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug terminus-font-ttf"
+
+get_dotfiles()
+{
+	if [ -d "$dotfiles_dir/Dotfiles" ]
+	then
+		printf "Dotfiles seems to be already installed. Exiting\n"
+		exit 1
+
+	elif [ ! -d "$dotfiles_dir/Dotfiles" ]
+	then
+		cd $dotfiles_dir
+		mkdir Dotfiles && cd Dotfiles
+		git clone https://github.com/rlingam/dotfiles.git
+		sudo stow -v -t ~/ dotfiles
+	fi
+}
+
+
+install_yaourt()
+{
+	cd /tmp
+	git clone https://aur.archlinux.org/package-query.git
+	cd package-query
+	makepkg -si
+	cd ..
+	git clone https://aur.archlinux.org/yaourt.git
+	cd yaourt
+	makepkg -si
+	cd ..
+	cd $dotfiles_dir && cd Dotfiles
+
+}
+
+install_suckless()
+{
+	if [ -d "~/suckless" ] && [ -d "$dotfiles_dir/Dotfiles" ]
+	then
+		printf "already installed"
+	elif [ ! -d "~/suckless" ]
+	then
+		printf "please install the dotfiles first"
+	fi
+}
+
+
+install_dependencies()
+{
+	if type yaourt &> /dev/null
+	then
+		sudo pacman  --noconfirm --needed -S $packages
+		install_aur_dependencies
+	else !
+		printf "Yaourt not installed. Installing yaourt first"
+		install_yaourt
+		sudo pacman --noconfirm --needed -S $packages
+		install_aur_dependencies
+	fi
+
+}
+
+install_aur_dependencies()
+{
+	sudo yaourt -S $aur_packages
+}
+
+greetings_message()
+{
+	cat << "EOF"
+
+ __          __  _
+ \ \        / / | |
+  \ \  /\  / /__| | ___ ___  _ __ ___   ___
+   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+    \  /\  /  __/ | (_| (_) | | | | | |  __/
+     \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+
+EOF
+
+printf "This script installs my dotfiles\n"
+
+}
+
+options()
+{
+	greetings_message
+	printf "\n"
+	printf "Please select a choice: \n 1.Install Dotfiles\n 2.Install just the dependencies\n"
+	read -p "Choice: " choice_made
+
+	if [ "$choice_made" = "1" ]
+	then
+		get_dotfiles
+		install_dependencies
+	elif [ "$choice_made" = "2" ]
+	then
+		install_dependencies
+	elif [ "$choice_made" = "3" ]
+	then
+		printf "placeholder"
+	fi
+}
+
+main()
+{
+	options
+}
+main
