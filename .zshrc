@@ -22,7 +22,9 @@ compinit
 
 
 # -- Variables
+export PATH=$PATH:$HOME/.scripts
 export EDITOR="vim"
+export TERMINAL="st"
 export BROWSER="qutebrowser"
 
 #AUTO_TITLE=true
@@ -118,7 +120,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
     alias s="cd ~/Dotfiles/dotfiles/scripts && ls -a"
     alias r="cd / && ls -a"
     alias cf="cd ~/.config && ls -a"
-    
+
 # }}}
 #
 ## New commands  {{{
@@ -139,6 +141,7 @@ alias la='ls -lha --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --col
 # System Maintainence
 alias progs='pacman -Qet' # Lists installed programs
 alias orphans='pacman -Qdt' # Lists orphaned programs
+alias upgr="neofetch && sudo pacman -Syyu --noconfirm && echo Update complete."
 
 ## Privileged access
 if [ $UID -ne 0 ]; then
@@ -240,7 +243,7 @@ td() {
 
 getwindowgeometry() {
     unset x y w h
-    eval $(xwininfo -id $(xdotool getactivewindow) | 
+    eval $(xwininfo -id $(xdotool getactivewindow) |
         sed -n -e "s/^ \+Absolute upper-left X: \+\([0-9]\+\).*/x=\1/p" \
                -e "s/^ \+Absolute upper-left Y: \+\([0-9]\+\).*/y=\1/p" \
                -e "s/^ \+Width: \+\([0-9]\+\).*/w=\1/p" \
