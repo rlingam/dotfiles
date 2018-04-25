@@ -13,7 +13,7 @@ packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-h
 
 aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug terminus-font-ttf"
 
-unsymlink_dotflies()
+unsymlink_dotfiles()
 {
 for dir in */; do
     child=("$dir"*); root=
@@ -44,7 +44,7 @@ uninstall_dependencies()
 {
            if type yaourt &> /dev/null
            then
-                  sudo pacman  --noconfirm --needed -Rs $packages
+                  sudo pacman  --noconfirm -Rs $packages
                   uninstall_aur_dependencies
            else
                   printf "Yaourt not installed. Installing yaourt first"
@@ -67,7 +67,7 @@ uninstall_suckless()
 
          cd ~/suckless/st
 
-         sudo make clean uninstall
+         sudo make uninstall
 
          printf "finished uninstalling st (1/4)\n"
 
@@ -76,7 +76,7 @@ uninstall_suckless()
 
          cd ~/suckless/dwm
 
-         sudo make clean uninstall
+         sudo make uninstall
 
          printf "finished uninstalling dwm (2/4)\n"
 
@@ -84,7 +84,7 @@ uninstall_suckless()
 
          cd ~/suckless/slstatus
 
-         sudo make clean uninstall
+         sudo make uninstall
 
          printf "finished uninstalling  slstatus (3/4)\n"
 
@@ -92,7 +92,7 @@ uninstall_suckless()
 
          cd ~/suckless/slock
 
- 	 sudo make clean uninstall
+         sudo make uninstall
 
          printf "finished uninstalling slock (4/4)\n"
 
@@ -106,8 +106,8 @@ uninstall_suckless()
 
 
 main()
-{	uninstall_dependencies
+{	unsymlink_dotfiles
 	uninstall_suckless
-	unsymlink_dotfiles
+	uninstall_dependencies
 }
 main
