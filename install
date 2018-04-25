@@ -54,6 +54,10 @@ install_suckless()
 
 	git clone git://git.suckless.org/st
 
+	mv st/* ~/suckless/st
+
+	rm -rf st
+
 	sudo make clean install
 
 	printf "finished installing st (1/4)\n"
@@ -62,6 +66,10 @@ install_suckless()
 	cd ~/suckless/dwm
 
 	git clone https://git.suckless.org/dwm
+
+	mv dwm/* ~/suckless/dwm
+
+	rm -rf dwm
 
 	sudo make clean install
 
@@ -73,6 +81,10 @@ install_suckless()
 
 	git clone https://git.suckless.org/slstatus
 
+	mv slstatus/* ~/suckless/slstatus
+
+	rm -rf slstatus
+
 	sudo make clean install
 
 	printf "finished installing  slstatus (3/4)\n"
@@ -83,6 +95,10 @@ install_suckless()
 
 	git clone https://git.suckless.org/slock
 
+	mv slock/* ~/suckless/slock
+
+	rm -rf slock
+
 	sudo make clean install
 
 	printf "finished installing slock (4/4)\n"
@@ -91,6 +107,7 @@ install_suckless()
 
 
 }
+
 
 symlink_dotfiles()
 {
@@ -106,6 +123,7 @@ done
 
 main()
 {
+		
 	symlink_dotfiles
 	install_dependencies
 	install_suckless
