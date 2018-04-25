@@ -2,7 +2,7 @@
 #
 # Uninstall dotfiles using stow dynamically.
 #
-# Created by Dylan Araps.
+# Original script created by Dylan Araps.
 
 for dir in */; do
     child=("$dir"*); root=

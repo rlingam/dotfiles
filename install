@@ -2,7 +2,7 @@
 #
 # Install dotfiles using stow dynamically.
 #
-# Created by Dylan Araps.
+# original script created by Dylan Araps.
 
 for dir in */; do
     child=("$dir"*); root=
