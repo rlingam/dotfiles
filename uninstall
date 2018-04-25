@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
 #
 # Uninstall dotfiles using stow dynamically.
+# Does not uninstall stow, git, base-devel, not only is it needed for this script
+# its probably good to keep those packages around, especially base-devel
+#
+# Another thing thing you should note is that this uninstall script does not uninstall yaourt.
+#
 #
 # Original script created by Dylan Araps.
 
+packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu"
+
+aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug terminus-font-ttf"
+
+unsymlink_dotflies()
+{
 for dir in */; do
     child=("$dir"*); root=
     [[ "$child" =~ $dir(bin|etc|var|usr|opt) ]] && root="root required"
@@ -11,3 +22,92 @@ for dir in */; do
     [[ "${ans,,}" != "y" ]] && continue
     [[ "$root" ]] && { sudo stow "$dir" -D /;:; } || stow -D "$dir"
 done
+}
+
+
+#install_yaourt()
+#{
+#         cd /tmp
+#         cd package-query
+#         makepkg -si
+#         cd ..
+#         git clone https://aur.archlinux.org/yaourt.git
+#         cd yaourt
+#         makepkg -si
+#         cd ..
+#         cd ~/
+#
+#}
+
+
+uninstall_dependencies()
+{
+           if type yaourt &> /dev/null
+           then
+                  sudo pacman  --noconfirm --needed -Rs $packages
+                  uninstall_aur_dependencies
+           else
+                  printf "Yaourt not installed. Installing yaourt first"
+                  #install_yaourt
+                  sudo pacman --noconfirm --needed -Rs $packages
+                  uninstall_aur_dependencies
+          fi
+
+}
+
+
+uninstall_aur_dependencies()
+{
+         sudo yaourt -R $aur_packages
+}
+
+
+uninstall_suckless()
+{
+
+         cd ~/suckless/st
+
+         sudo make clean uninstall
+
+         printf "finished uninstalling st (1/4)\n"
+
+
+
+
+         cd ~/suckless/dwm
+
+         sudo make clean uninstall
+
+         printf "finished uninstalling dwm (2/4)\n"
+
+
+
+         cd ~/suckless/slstatus
+
+         sudo make clean uninstall
+
+         printf "finished uninstalling  slstatus (3/4)\n"
+
+
+
+         cd ~/suckless/slock
+
+ 	 sudo make clean uninstall
+
+         printf "finished uninstalling slock (4/4)\n"
+
+         printf "finished uninstalling suckless\n"
+
+
+}
+
+
+
+
+
+main()
+{	uninstall_dependencies
+	uninstall_suckless
+	unsymlink_dotfiles
+}
+main

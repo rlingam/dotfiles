@@ -2,8 +2,98 @@
 #
 # Install dotfiles using stow dynamically.
 #
+# Requires: stow
+#
 # original script created by Dylan Araps.
 
+packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu git stow base-devel"
+
+aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug terminus-font-ttf"
+
+install_yaourt()
+{
+          cd /tmp
+          git clone https://aur.archlinux.org/package-query.git
+          cd package-query
+          makepkg -si
+          cd ..
+          git clone https://aur.archlinux.org/yaourt.git
+          cd yaourt
+          makepkg -si
+          cd ..
+	  cd ~/
+
+}
+
+
+install_dependencies()
+   {
+           if type yaourt &> /dev/null
+           then
+                 sudo pacman  --noconfirm --needed -S $packages
+                 install_aur_dependencies
+           else
+                 printf "Yaourt not installed. Installing yaourt first"
+                 install_yaourt
+                 sudo pacman --noconfirm --needed -S $packages
+                 install_aur_dependencies
+          fi
+
+ }
+
+install_aur_dependencies()
+{
+          sudo yaourt -S $aur_packages
+}
+
+
+install_suckless()
+{
+
+	cd ~/suckless/st
+
+	git clone git://git.suckless.org/st
+
+	sudo make clean install
+
+	printf "finished installing st (1/4)\n"
+
+
+	cd ~/suckless/dwm
+
+	git clone https://git.suckless.org/dwm
+
+	sudo make clean install
+
+	printf "finished installing dwm (2/4)\n"
+
+
+
+	cd ~/suckless/slstatus
+
+	git clone https://git.suckless.org/slstatus
+
+	sudo make clean install
+
+	printf "finished installing  slstatus (3/4)\n"
+
+
+
+	cd ~/suckless/slock
+
+	git clone https://git.suckless.org/slock
+
+	sudo make clean install
+
+	printf "finished installing slock (4/4)\n"
+
+	printf "finished installing suckless\n"
+
+
+}
+
+symlink_dotfiles()
+{
 for dir in */; do
     child=("$dir"*); root=
     [[ "$child" =~ $dir(bin|etc|var|usr|opt) ]] && root="root required"
@@ -11,3 +101,14 @@ for dir in */; do
     [[ "${ans,,}" != "y" ]] && continue
     [[ "$root" ]] && { sudo stow "$dir" -t /;:; } || stow "$dir"
 done
+}
+
+
+main()
+{
+	symlink_dotfiles
+	install_dependencies
+	install_suckless
+	printf "Installation finished"
+}
+main
