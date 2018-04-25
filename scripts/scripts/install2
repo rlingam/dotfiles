@@ -5,7 +5,7 @@
 #
 #TODO: 1. create uninstall choice w/ function. 2. finish install_suckless 3. test script
 
-dotfiles_dir=~/Videos/
+dotfiles_dir=~/
 
 packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu git stow"
 
@@ -21,8 +21,7 @@ get_dotfiles()
 	elif [ ! -d "$dotfiles_dir/Dotfiles" ]
 	then
 		cd $dotfiles_dir
-		mkdir Dotfiles && cd Dotfiles
-		git clone https://github.com/rlingam/dotfiles.git
+		mkdir Dotfiles && mv dotfiles $dotfiles_dir/ && cd Dotfiles
 		sudo stow -v -t ~/ dotfiles
 	fi
 }
