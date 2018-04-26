@@ -127,6 +127,6 @@ main()
 	symlink_dotfiles
 	install_dependencies
 	install_suckless
-	printf "Installation finished"
+	printf "Installation finished\n"
 }
 main
