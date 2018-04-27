@@ -15,6 +15,9 @@ aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug
 
 unsymlink_dotfiles()
 {
+
+cd ~/dotfiles
+	
 for dir in */; do
     child=("$dir"*); root=
     [[ "$child" =~ $dir(bin|etc|var|usr|opt) ]] && root="root required"
@@ -106,8 +109,9 @@ uninstall_suckless()
 
 
 main()
-{	unsymlink_dotfiles
+{	
 	uninstall_suckless
+	unsymlink_dotfiles
 	uninstall_dependencies
 }
 main
