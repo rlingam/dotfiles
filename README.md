@@ -53,9 +53,9 @@ config file.
 
 You can now use the install script to install these dotfiles.
 
-Change to Download directory:
+Change to Home directory:
 
-`cd ~/Downloads`
+`cd ~/`
 
 Clone the repo:
 
@@ -63,17 +63,16 @@ Clone the repo:
 
 Change directory to install script:
 
-`cd dotfiles/scripts/`
+`cd dotfiles/`
 
 Run script:
 
 `./install`
 
-After the installation is succesfully finished, delete redundant dotfiles
-
-`rm -rf ~/Downloads/dotfiles`
-
 Beware however the script may not work properly as its not thoroughly tested.
+
+If you get the WARNING! stowing blank would cause conflicts. You probably have conflicting directories,
+check the destination of the stow symlink in question and remove it.
 
 Method two might be better if you want to manully install dependencies or fine tune the install to your liking.
 
@@ -82,14 +81,6 @@ Make sure `ln` is installed on your distro and simply
 navigate to your home directory
 
 ` cd ~/`
-
-make the dotfiles directory:
-
-`mkdir Dotfiles`
-
-change into the Dotfiles directory:
-
-`cd Dotfiles`
 
 clone the repo:
 
