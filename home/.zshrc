@@ -25,7 +25,7 @@ compinit
 export PATH=$PATH:$HOME/.scripts
 export EDITOR="vim"
 export TERMINAL="st"
-export BROWSER="qutebrowser"
+export BROWSER="firefox"
 
 #AUTO_TITLE=true
 # -- Window title
