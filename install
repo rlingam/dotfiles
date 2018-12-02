@@ -7,9 +7,9 @@
 packages="alsa-utils scrot redshift feh slop wmctrl xdotool mpv vim zsh-syntax-highlighting scrot qutebrowser ffmpeg feh awk maim xclip wget youtube-dl mpc w3m irssi terminus-font cmus dmenu git stow base-devel"
 
 aur_packages="xorg-xwininfo  xrectsel imagemagick neofetch python2-potr vim-plug terminus-font-ttf"
-install_stow()
+install_stow_and_sudo()
 {
-    pacman -S --noconfirm stow
+    pacman -S --noconfirm stow sudo
 }
 
 install_yaourt()
