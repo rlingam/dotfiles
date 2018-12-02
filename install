@@ -125,7 +125,7 @@ done
 
 main()
 {
-	install_stow
+	install_stow_and_sudo
 	symlink_dotfiles
 	install_dependencies
 	install_suckless
